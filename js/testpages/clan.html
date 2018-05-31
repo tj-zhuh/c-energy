@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" style="font-size:100px;">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <script src="../modules/jquery-1.12.4.js"></script>
+    <script src="../modules/clan.js"></script>
+    <style>
+        .clan { width: 15rem; height: 6rem; border: 1px solid #ccc; margin: 0.5rem auto; position: relative; overflow: auto; }
+        .clan .inner { margin: 0 auto; position: relative; }
+        .clan .hide { margin-left: -9999px; }
+        .clan .box { position: absolute; border: 1px solid #ccc; height: 0.8rem; }
+        .clan .vline { position: absolute; border-left: 1px solid #ccc; }
+        .clan .hline { position: absolute; border-top: 1px solid #ccc; }
+    </style>
+    <script>
+
+        var node = {
+
+            id: '0',
+            children: [{
+                id: '1',
+                children: [{
+                    id: '2',
+                    children: [{
+                        id: '24',
+                    }]
+                }, {
+                    id: '3',
+                    children: [{
+                        id: '5',
+                        children: [{
+                            id: '16',
+                        }, {
+                            id: '17',
+                        }]
+                    }, {
+                        id: '10',
+                        children: [{
+                            id: '18'
+                        }, {
+                            id: '19'
+                        }, {
+                            id: '22'
+                        }, {
+                            id: '23'
+                        }]
+                    }]
+                }]
+            }, {
+                id: '4',
+                children: [{
+                    id: '6',
+                    children: [{
+                        id: '7'
+                    }, {
+                        id: '8'
+                    }]
+                }, {
+                    id: '9'
+                }, {
+                    id: '11',
+                    children: [{
+                        id: '12'
+                    }, {
+                        id: '13',
+                        children: [{
+                            id: '14'
+                        }, {
+                            id: '15'
+                        }]
+                    }]
+                }]
+            }]
+        };
+
+        $(function () {
+            var options = {
+                selector: '.clan',  // 选择器
+                padding: 50,  //  内边距
+                gap: 50,   // 相邻两个框的距离
+                width: 100,  // 框的宽度
+                height: 80,  // 框的高
+                seg1: 20,  // 竖线1的长度
+                seg2: 20   // 竖线2的长度
+            };
+            clan.config(options).init().draw(node);
+        })
+
+
+    </script>
+</head>
+<body>
+    <div class="clan">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
