@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="develop/c/c-analyze/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container region-container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <a href='home.html'><img src="/images/icon-back-active.png" /></a>碳排放分析
+            <ul class="nav">
+                <li><a href="c-calculate.html">碳排放计算</a></li>
+                <li><a href="c-amount.html">碳排放量</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="panel" id="panel1">
+                <div class="box common-conditions">
+                    <ul class="fields">
+                        <!--<li class="field"><label>地区</label><select id="areaSelect"></select></li>-->
+                        <li class="field">
+                            <label>地区</label>
+                            <div class="select-panel multi-select-panel">
+                                <div class="text select-text multi-select-text" id="areaSelect"></div>
+                                <div class="select-box multi-select-box" id="areaSelectBox"></div>
+                            </div>
+                        </li>
+                        <li class="field"><label>行业</label><select id="businessSelect"></select></li>
+                        <li class="field">
+                            <label>企业</label>
+                            <div class="select-panel multi-select-panel">
+                                <div class="text select-text multi-select-text" id="companySelect"></div>
+                                <div class="select-box multi-select-box" id="companySelectBox"></div>
+                            </div>
+                        </li>
+                        <li class="field">
+                            <label>起始期数</label>
+                            <div class="select-panel month-select-panel">
+                                <div class="text select-text month-select-text" id="beginSequence"></div>
+                                <div class="select-box month-select-box" id="beginSequenceBox"></div>
+                            </div>
+                        </li>
+                        <li class="field">
+                            <label>结束期数</label>
+                            <div class="select-panel month-select-panel">
+                                <div class="text select-text month-select-text" id="endSequence"></div>
+                                <div class="select-box month-select-box" id="endSequenceBox"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="target">
+                        <span class='label'>碳排放目标：</span>
+                        <span class="target-value" id="target"></span>
+                        <span class="target-unit">tCO<sub style="font-size:0.7em">2</sub></span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" id="panel2">
+                <div class="box" id="box2a">
+                    <div class="box-title">碳核算方法</div>
+                    <ul class="mcheck" id="mcheck1">
+                        <li itemid="1d2aafe0b969a0018d5d42aa"><cite></cite><i>质量守恒法</i></li>
+                        <li itemid="1d2bac89731940018d5d42aa"><cite></cite><i>国标默认法</i></li>
+                        <li itemid="1d2aafe118c7b0018d5d42aa"><cite></cite><i>核查公司</i></li>
+                        <li itemid="1d2aafe1c47100018d5d42aa"><cite></cite><i>国标实测法</i></li>
+                        <li itemid="1d2aafe17825c0018d5d42aa"><cite></cite><i>烟气直排法</i></li>
+                        <li itemid="1d2bac95ab2680018d5d42aa"><cite></cite><i>指南默认法</i></li>
+                        <li itemid="###"><cite></cite><i>自定义</i></li>
+                        <li itemid="1d2aafe210bc40018d5d42aa"><cite></cite><i>指南实测法</i></li>
+                    </ul>
+                    <ul class="mcheck">
+                        <li class="field" >
+                            <div class="select-panel multi-select-panel" id="defMultiSelect">
+                                <div class="text select-text multi-select-text" id="defSelect"></div>
+                                <div class="select-box multi-select-box" id="defSelectBox"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box" id="box2a2">
+                    <div class="box-title">核查方式</div>
+                    <ul class="mcheck" id="mcheck2">
+                        <li itemid="1"><cite></cite><i>自查数据</i></li>
+                        <li itemid="2"><cite></cite><i>核查数据</i></li>
+                    </ul>
+                </div> 
+                <div class="box" id="box2a3">
+                    <div class="box-title">分类</div>
+                    <ul class="mcheck" id="mcheck1">
+                        <li><input type="radio" class="radio2" id="radio-21" name="source" value="1" checked="checked" /><i>碳排放量</i></li>
+                        <li><input type="radio" class="radio2" id="radio-22" name="source" value="2" /><i>碳排放强度</i></li>
+                    </ul>
+                </div>  
+                <div id="box2b">
+                    <ul class="top-buttons">
+                        <li class="button1" id="button1">比较</li>
+                    </ul>
+                    <div class="grid-container" id="grid1"></div>
+                </div>
+            </div>
+            <div class="panel" id="panel3">
+                <div class="chart-container" id="chart1"></div>
+                <!--<div class="chart-container" id="chart2"></div>-->
+                <!--<div class="chart-container" id="chart3"></div>-->
+            </div>            
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/c/c-analyze/page"></script>
+</body>
+</html>

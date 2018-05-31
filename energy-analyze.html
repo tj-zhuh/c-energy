@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="develop/energy/energy-analyze/page.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div class="container region-container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <img src="/images/icon-back-active.png" />
+            能效对标分析
+            <ul class="nav">
+                <li><a href="energy-calc.html">能耗计算</a></li>
+                <li><a href="energy-alarm.html">节能预警</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="panel" id="panel1">
+                <div class="box common-conditions">
+                    <ul class="fields">
+                        <li class="field">
+                            <label>地区</label>
+                            <div class="select-panel multi-select-panel">
+                                <div class="text select-text multi-select-text" id="areaSelect"></div>
+                                <div class="select-box multi-select-box" id="areaSelectBox"></div>
+                            </div>
+                        </li>
+                        <li class="field"><label>行业</label><select id="businessSelect"></select></li>
+                        <li class="field">
+                            <label>企业</label>
+                            <div class="select-panel multi-select-panel">
+                                <div class="text select-text multi-select-text" id="companySelect"></div>
+                                <div class="select-box multi-select-box" id="companySelectBox"></div>
+                            </div>
+                        </li>
+                        <li class="field">
+                            <label>起始期数</label>
+                            <div class="select-panel month-select-panel">
+                                <div class="text select-text month-select-text" id="beginSequence"></div>
+                                <div class="select-box month-select-box" id="beginSequenceBox"></div>
+                            </div>
+                        </li>
+                        <li class="field">
+                            <label>结束期数</label>
+                            <div class="select-panel month-select-panel">
+                                <div class="text select-text month-select-text" id="endSequence"></div>
+                                <div class="select-box month-select-box" id="endSequenceBox"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="target">
+                        <span class='label'>能耗目标：</span>
+                        <span class="target-value" id="target"></span>
+                        <span class="target-unit">tce</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" id="panel2">
+                <div class="box common-conditions" id="box2a">
+                    <div class="box-title">能耗计算</div>
+                    <ul class="mcheck fields" id="mcheck1">
+                        <li itemid="1"><cite></cite><i>标准</i></li>
+                        <li><select id="targetSelect"></select></li>
+                        <li itemid="2"><cite></cite><i>企业自算</i></li>
+                        <li itemid="3"><cite></cite><i>自定义</i></li>
+                        <li class="field">
+                            <div class="select-panel multi-select-panel">
+                                <div class="text select-text multi-select-text" id="areaSelect"></div>
+                                <div class="select-box multi-select-box" id="areaSelectBox"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box" id="box2b">
+                    <div class="box-title">燃煤热值计算</div>
+                    <ul class="mcheck" id="methodMcheck">
+                        <li itemid="1">
+                            <cite></cite><i>工业分析法</i>
+                        </li>
+                        <li itemid="2">
+                            <cite></cite><i>氧弹量热法</i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="box" id="box2d">
+                    <div class="box-title">能效对标</div>
+                    <ul class="radios" id="radio2">
+                        <li class="active" itemid="1" id="li1">
+                            <cite></cite><label>对标标准</label>
+                            <select id="standard">
+                            </select>
+                        </li>
+                        <li itemid="2" id="li2">
+                            <cite></cite><label>标杆企业</label><select id="standEnterprise"></select>
+                        </li>
+                    </ul>
+                </div>
+
+           
+
+                <div id="box2c">
+                    <ul class="top-buttons">
+                        <li class="button1" id="buttonCalc">比较</li>
+                    </ul>
+                    <div class="grid-container" id="grid1"></div>
+                </div>
+            </div>
+            <div class="panel" id="panel3">
+                <div class="chart-container" id="chart1"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/energy/energy-analyze/page"></script>
+</body>
+</html>

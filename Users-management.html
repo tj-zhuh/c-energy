@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="develop/Users/management/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <img src="/images/icon-back-active.png" />
+            用户管理
+        </div>
+        <div class="content">
+            <div class="panel panel-left-menu">
+                <ul class="menu">
+                    <li class="active"><img src="images/bg-leftmenu.png" /><i>用户管理</i></li>
+                    <li><a href="Users-authority.html">权限管理</a></li>             
+                </ul>
+            </div>
+            <div class="panel panel-condition">
+                <ul class="left">
+                    <li class="label-text">
+                        <label>用户名</label>
+                        <input type="text" id="search-name" />
+                    </li>
+                    <li class="image-button search" id="search">
+                        <img src="images/icon-query.png" />
+                    </li>
+                </ul>
+                <ul class="right">
+                   
+                    <li class="image-text-button add">
+                        <div class="image"><img src="images/icon-add.png" /></div>添加
+                    </li>
+                </ul>
+            </div>
+            <div class="panel panel-main">
+                <div class="grid-container" id="grid1"></div>
+                <div class="">
+                    <div class="page-description">
+                        当前第<span id="current-page"></span>条
+                        共计<span id="total-page"></span>条
+                    </div>
+                    <div class="pagin"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="opacity-div-for-modelwin"></div>
+    <div class="window" id="window1">
+        <div class="window-head" id="window-head1">
+            <span class="window-title">添加</span><a class="window-close"></a>
+        </div>
+        <div class="window-body window-form-body">
+            <form>
+                <input type="hidden" name="USERID" id="USERID" />
+                <ul class="length8">
+                    <li><label>用户名</label><input type="text" class="text" name="USERNAME" id="USERNAME" /></li>
+                    <li><label>角色</label><select id="ROLECODE" name="ROLECODE"></select></li>
+                </ul>
+            </form>
+            <div class="window-buttons">
+                <span class="button1 window-submit">保存</span>
+                <span class="button1 window-cancel">取消</span>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/Users/management/page"></script>
+</body>
+</html>

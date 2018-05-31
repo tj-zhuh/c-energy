@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="develop/c/c-amount/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container region-container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <a href='c-analyze.html'><img src="/images/icon-back-active.png" /></a>碳排放量
+        </div>
+        <div class="content">
+            <div class="panel" id="panel1">
+                <div class="box common-conditions">
+                    <ul class="fields">
+                        <li class="field"><label>地区</label><select id="areaSelect"></select></li>
+                        <li class="field">
+                            <label>行业</label>
+                            <select id="businessSelect"></select>
+                        </li>
+                        <li class="field">
+                            <label>企业</label>
+                            <div class="select-panel multi-select-panel">
+                                <div class="text select-text multi-select-text" id="companySelect"></div>
+                                <div class="select-box multi-select-box" id="companySelectBox"></div>
+                            </div>
+                        </li>
+                        <li class="field">
+                            <label>起始期数</label>
+                            <div class="select-panel month-select-panel">
+                                <div class="text select-text month-select-text" id="beginSequence"></div>
+                                <div class="select-box month-select-box" id="beginSequenceBox"></div>
+                            </div>
+                        </li>
+                        <li class="field">
+                            <label>结束期数</label>
+                            <div class="select-panel month-select-panel">
+                                <div class="text select-text month-select-text" id="endSequence"></div>
+                                <div class="select-box month-select-box" id="endSequenceBox"></div>
+                            </div>
+                        </li>
+                        <li class="image-button" id="search">
+                            <img src="images/icon-query.png" />
+                        </li>
+                    </ul>
+                    <div class="target">
+                        <span class='label'>碳排放目标：</span>
+                        <span class="target-value" id="target"></span>
+                        <span class="target-unit">tCo2</span>
+                    </div>
+                </div>
+            </div>
+            <div class="panel" id="panel2">
+                <div class="grid-container" id="grid1"></div>
+            </div>
+            <div class="panel panel-chart" id="panel3">
+                <div class="boxb-title">
+                    <label class="l l1l" id="l1l"></label>
+                    <label class="l l1c" id="l1c">所属行业：</label>
+                    <label class="l l1r" id="l1r">所属地区：</label>
+                    <label class="l l1p" id="l1p">排名：</label>
+                    <label class="l l1pn" id="l1pn"></label>
+                </div>
+                <div class="boxb-line" id="chart1"></div>
+            </div>
+            <div class="panel panel-chart" id="panel4">
+                <div class="boxb-title">
+                    <label class="l l1l" id="l2l"></label>
+                    <label class="l l1c" id="l2c">所属行业：</label>
+                    <label class="l l1r" id="l2r">所属地区：</label>
+                    <label class="l l1p" id="l2p">排名：</label>
+                    <label class="l l1pn" id="l2pn"></label>
+                </div>
+                <div class="boxb-line" id="chart2"></div>
+            </div>
+            <div class="panel panel-chart" id="panel5">
+                <div class="boxb-title">
+                    <label class="l l1l" id="l3l"></label>
+                    <label class="l l1c" id="l3c">所属行业：</label>
+                    <label class="l l1r" id="l3r">所属地区：</label>
+                    <label class="l l1p" id="l3p">排名：</label>
+                    <label class="l l1pn" id="l3pn"></label>
+                </div>
+                <div class="boxb-line" id="chart3"></div>
+            </div>
+            <div class="panel panel-chart" id="panel6">
+                <div class="boxb-title">
+                    <label class="l l1l" id="l4l"></label>
+                    <label class="l l1c" id="l4c">所属行业：</label>
+                    <label class="l l1r" id="l4r">所属地区：</label>
+                    <label class="l l1p" id="l4p">排名：</label>
+                    <label class="l l1pn" id="l4pn"></label>
+                </div>
+                <div class="boxb-line" id="chart4"></div>
+            </div>
+            <div class="paginbox">
+                <div class="page-description">
+                    当前第<span id="current-page"></span>条
+                    共计<span id="total-page"></span>页
+                </div>
+                <div class="pagin"></div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/c/c-amount/page"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/setting.css" rel="stylesheet" />
+    <link href="develop/setting2/process/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <a href='company.html'><img src="images/icon-back-active.png" /></a>
+            企业生产许可
+        </div>
+        <div class="content">
+            <div class="panel panel-left-menu">
+                <ul class="menu">
+                    <!--<li><a href="setting2-enterprise-AccountUnit.html">企业核算单元配置</a></li>-->
+                    <li><a href="setting2-enterprise-license.html">企业生产许可证</a></li>
+                    <li class="active"><img src="images/bg-leftmenu.png" /><i>企业生产工艺图</i></li>
+                    <li><a href="setting2-enterprise-coefficient.html">企业折标系数</a></li>
+                    <li><a href="setting2-enterprise-energyMedium.html">企业能源介质</a></li>
+                    <li><a href="setting2-enterprise-outputMedium.html">企业排放源</a></li>
+                    <li><a href="setting2-enterprise-outputFactor.html">企业实测排放因子</a></li>
+                    <!--<li><a href="setting2-enterprise-Formula.html">企业计算公式</a></li>-->
+                </ul>
+            </div>
+            <div class="panel panel-condition">
+                <ul class="left">
+                    <li class="label-text">
+                        <label>地区</label>
+                        <select id="areaSelect"></select>
+                    </li>
+                    <li class="label-text">
+                        <label>行业</label>
+                        <select id="businessSelect"></select>
+                    </li>
+                    <li class="label-text">
+                        <label>企业</label>
+                        <select id="enterpriseSelect"></select>
+                    </li>
+                    <li class="image-button search" id="search">
+                        <img src="images/icon-query.png" />
+                    </li>
+                </ul>
+            </div>
+            <div class="panel panel-main">
+                <img id="blob" class="blob" />
+            </div>
+        </div>
+    </div>
+    <div class="opacity-div-for-modelwin"></div>
+    <div class="window" id="window1">
+        <div class="window-head" id="window-head1">
+            <span class="window-title">添加</span><a class="window-close"></a>
+        </div>
+        <div class="window-body window-form-body">
+            <form>
+                <input type="hidden" name="cTargetId" id="cTargetId" />
+                <ul class="length5">
+                    <li><label>行业名</label><input type="text" class="text" name="cTargetType" id="cTargetType" /></li>
+                    <li><label>介质名</label><input type="text" class="text" name="cOutput" id="cOutput" /></li>
+                    <li><label>平均发热量</label><input type="text" class="text" name="Year" id="Year" /></li>
+                    <li><label>折标系数</label><input type="text" class="text" name="Year" id="Year" /></li>
+                </ul>
+            </form>
+            <div class="window-buttons">
+                <span class="button1 window-submit">保存</span>
+                <span class="button1 window-cancel">取消</span>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/setting2/process/page"></script>
+</body>
+</html>

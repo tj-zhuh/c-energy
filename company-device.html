@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="develop/company/company-device/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container region-container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <a href='company.html'><img src="images/icon-back-active.png" /></a>
+            <label class="company-name" id="company-name"></label>
+                <p class="state">重点能耗设备</p>
+                <div class="statehr"></div>
+        </div>
+        <div class="content">
+            <div>
+                <ul class="queryul">
+                    <li>
+                        <label class="startDateLabel">起始期数</label>
+                        <div class="select-panel month-select-panel startDate">
+                            <div class="text select-text month-select-text" id="beginSequence"></div>
+                            <div class="select-box month-select-box" id="beginSequenceBox"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="startDateLabel endDateLabel">结束期数</label>
+                        <div class="select-panel month-select-panel  startDate endDate">
+                            <div class=" text select-text month-select-text" id="endSequence"></div>
+                            <div class="select-box month-select-box" id="endSequenceBox"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <label class="startDateLabel energyTypeLabel">能耗类别</label>
+                        <select class="startDate energyType" id="energyTypeSelect"></select>
+                    </li>
+                    <li class="image-button" id="search">
+                        <img src="images/icon-query.png" />
+                    </li>
+                </ul>
+            </div>
+            <div class="panel" id="panel1">
+                <div class="box boxa" id="box1a"><p class="p1" id="p11">运转小时</p><p class="p2" id="p12"></p><p class="p3" id="p13">H</p><p class="p4" id="p14"></p></div>
+                <div class="box boxb" id="box1b">
+                    <div class="boxb-value">
+                        <label class="l l1 ll" id="l11"></label>
+                        <label class="l l1 lr" id="l12"></label>
+                        <label class="l l2 ll" id="l13"></label>
+                        <label class="l l2 lr" id="l14"></label>
+                    </div>
+                    <div class="boxb-line" id="chart1"></div>
+                </div>
+            </div>
+            <div class="panel" id="panel2">
+                <div class="box boxa" id="box2a"><p class="p1" id="p21">运转小时</p><p class="p2" id="p22"></p><p class="p3" id="p23">H</p><p class="p4" id="p24"></p></div>
+                <div class="box boxb" id="box2b">
+                    <div class="boxb-value">
+                        <label class="l l1 ll" id="l21"></label>
+                        <label class="l l1 lr" id="l22"></label>
+                        <label class="l l2 ll" id="l23"></label>
+                        <label class="l l2 lr" id="l24"></label>
+                    </div>
+                    <div class="boxb-line" id="chart2"></div>
+                </div>
+            </div> 
+            <div class="panel" id="panel3">
+                <div class="box boxa" id="box3a"><p class="p1" id="p31">运转小时</p><p class="p2" id="p32"></p><p class="p3" id="p33">H</p><p class="p4" id="p34"></p></div>
+                <div class="box boxb" id="box3b">
+                    <div class="boxb-value">
+                        <label class="l l1 ll" id="l31"></label>
+                        <label class="l l1 lr" id="l32"></label>
+                        <label class="l l2 ll" id="l33"></label>
+                        <label class="l l2 lr" id="l34"></label>
+                    </div>
+                    <div class="boxb-line " id="chart3"></div>
+                </div>
+            </div> 
+            <div class="panel" id="panel4">
+                <div class="box boxa" id="box4a"><p class="p1" id="p41">运转小时</p><p class="p2" id="p42"></p><p class="p3" id="p43">H</p><p class="p4" id="p44"></p></div>
+                <div class="box boxb" id="box4b">
+                    <div class="boxb-value">
+                        <label class="l l1 ll" id="l41"></label>
+                        <label class="l l1 lr" id="l42"></label>
+                        <label class="l l2 ll" id="l43"></label>
+                        <label class="l l2 lr" id="l44"></label>
+                    </div>
+                    <div class="boxb-line" id="chart4"></div>
+                </div>
+            </div>
+            <div class="paginbox">
+                <div class="page-description">
+                    当前第<span id="current-page"></span>条
+                    共计<span id="total-page"></span>页
+                </div>
+                <div class="pagin"></div>
+            </div>           
+        </div>
+    </div>
+    <script src="js/common/rem.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/require-2.1.11.js" data-main="/develop/company/company-device/page"></script>
+</body>
+</html>

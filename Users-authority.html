@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="develop/Users/authority/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <img src="/images/icon-back-active.png" />
+            权限管理
+        </div>
+        <div class="content">
+            <div class="panel panel-left-menu">
+                <ul class="menu">
+                    <li><a href="Users-management.html">用户管理</a></li>
+                    <li class="active"><img src="images/bg-leftmenu.png" /><i>权限管理</i></li>
+               </ul>
+            </div>
+            <div class="panel panel-condition">
+                <ul class="left">
+                    <li class="label-text">
+                        <label>角色名</label>
+						<select class="region" id="roleSelect"></select>
+                    </li>
+                </ul>
+                <ul class="right">
+					<li class="image-text-button save">保存</li>
+                </ul>
+            </div>
+            <div class="panel panel-main">
+				<div class="function-container">
+					<div class="title">
+						<div class="title-column title-column1">功能名称</div>
+                        <div class="title-column title-column2">编码</div>
+                        <div class="title-column title-column3">授权</div>
+					</div>
+					<ul id="features"></ul>
+				</div>
+            </div>
+        </div>
+    </div>	
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/Users/authority/page"></script>
+</body>
+</html>

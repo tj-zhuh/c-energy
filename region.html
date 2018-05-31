@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>首页</title>
+    <link href="CSS/home-style.css" rel="stylesheet" />
+    <link href="CSS/region-style.css" rel="stylesheet" />   
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+    </div>
+    <div class="upper">
+        <div class="goback"></div>
+        <div class="marks mark1">
+            <div class="line line1">
+                <span class="number" id="number1"></span>
+                <span class="unit">个</span>
+            </div>
+            <div class="line line2">
+                <span class="catelog">行业</span>
+            </div>
+        </div>
+        <div class="marks mark2">
+            <div class="line line1">
+                <span class="number" id="number2"></span>
+                <span class="unit">个</span>
+            </div>
+            <div class="line line2">
+                <span class="catelog">企业</span>
+            </div>
+        </div>
+        <div class="marks mark3">
+            <div class="line line1">
+                <span class="number" id="number3"></span>
+                <span class="unit">个</span>
+            </div>
+            <div class="line line2">
+                <span class="catelog small-catelog">计量采集点</span>
+            </div>
+        </div>
+        <div class="chart-container" id="chart0"></div>
+        <ul class="switch">
+            <li id="switch-c" class="first active">碳排放</li>
+            <li id="switch-energy" class="last">能耗量</li>
+        </ul>
+    </div>
+    <div class="lower">
+        <div class="righttop"><div id="echt1"></div></div>       
+        <div class="bottom">
+            <div id="echt2"></div>
+            <div id="echt3"></div>
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/about/region/page"></script>
+</body>
+</html>

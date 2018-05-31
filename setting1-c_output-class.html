@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/setting.css" rel="stylesheet" />
+    <link href="develop/setting1/c_output-class/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <img src="/images/icon-back-active.png" />
+            碳活动数据类别
+        </div>
+        <div class="content">
+            <div class="panel panel-left-menu">
+                <ul class="menu">
+                    <li><a href="setting1-industry.html">行业配置</a></li>
+                    <li><a href="setting1-energy-medium.html">能源介质配置</a></li>
+                    <li><a href="setting1-calc-unit.html">计算单位配置</a></li>
+                    <li class="active"><img src="images/bg-leftmenu.png" /><i>碳活动数据类别配置</i></li>
+                    <li><a href="setting1-c-source.html">碳活动数据配置</a></li>
+                    <li><a href="setting1-c-factor.html">碳排放因子配置</a></li>
+                    <li><a href="setting1-coefficient-config.html">排放因子参数配置</a></li>
+                    <li><a href="setting1-marking-factor.html">折标系数配置</a></li>
+                    <li><a href="setting1-energy-catalog.html">能耗指标类别配置</a></li>
+                    <li><a href="setting1-energy-limit.html">能耗限额配置</a></li>
+                    <li><a href="setting1-c-target.html">碳排放配额配置</a></li>
+                    <li><a href="setting1-energy-target.html">节能指标配置</a></li>
+                    <li><a href="setting1-product.html">物料类别配置</a></li>
+                    <!--<li><a href="setting1-materiel.html">物料配置</a></li>-->
+                    <!--<li><a href="setting1-formula.html">计算公式配置</a></li>-->
+                </ul>
+            </div>
+            <div class="panel panel-condition">
+                <ul class="left">
+                    <li class="label-text">
+                        <label>类别名称</label>
+                        <input type="text" id="search-name"/>
+                    </li>
+                    <li class="image-button search" id="search">
+                        <img src="images/icon-query.png" />
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li class="image-text-button import">
+                        <div class="image"><img src="images/icon-import.png" /></div>导入
+                    </li>
+                    <li class="image-text-button add">
+                        <div class="image"><img src="images/icon-add.png" /></div>添加
+                    </li>
+                </ul>
+            </div>
+            <div class="panel panel-main">
+                <div class="grid-container" id="grid1"></div>
+                <div class="">
+                    <div class="page-description">
+                        当前第<span id="current-page"></span>条
+                        共计<span id="total-page"></span>条
+                    </div>
+                    <div class="pagin"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="opacity-div-for-modelwin"></div>
+    <div class="window" id="window1">
+        <div class="window-head" id="window-head1">
+            <span class="window-title">添加</span><a class="window-close"></a>
+        </div>
+        <div class="window-body window-form-body">
+            <form>
+                <input type="hidden" name="EMISSIONTYPEID" id="EMISSIONTYPEID" />
+                <input type="hidden" name="ETYPECODE" id="ETYPECODE" />
+                <ul class="length8">
+                    <li><label>行业</label><select name="BUSINESSID" id="BUSINESSID"></select></li>
+                    <li><label>类别名称</label><input type="text" class="text" name="EMISSIONTYPEDESC" id="EMISSIONTYPEDESC" /></li>
+                    <!--<li><label>类别编码</label><input type="text" class="text" name="ETYPECODE" id="ETYPECODE" /></li>-->
+                    <li><label>来源</label><select name="EMISSIONTYPESOURCE" id="EMISSIONTYPESOURCE"></select></li>
+                </ul>
+            </form>
+            <div class="window-buttons">
+                <span class="button1 window-submit">保存</span>
+                <span class="button1 window-cancel">取消</span>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/setting1/c_output-class/page"></script>
+</body>
+</html>

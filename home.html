@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>首页</title>
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/home-style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+            <div class="head-right">
+                <ul class="topmenu">
+                    <li class="auth-canalyze"><a href="c-analyze.html">碳排放分析</a></li>
+                    <li class="auth-eanalyze"><a href="energy-analyze.html">能效对标分析</a></li>
+                    <li class="auth-co"><a href="company.html">用能企业</a></li>
+                </ul>
+                <ul class="topright">
+                    <li id="icon-link1" class="auth-setting1">
+                        <a href="setting1-industry.html"><img title="标准配置" src="/images/icon-link1.png" id="BT1" /></a>
+                    </li>
+                    <li id="icon-link2" class="auth-formula">
+                        <a href="setting1-formula.html"><img title="计算公式配置" src="/images/icon-link2.png" /></a>
+                    </li>
+                    <li id="icon-setting" class="auth-user">
+                        <a href="Users-management.html"><img title="用户管理" src="/images/icon-setting.png" /></a>
+                    </li>
+                    <li id="icon-user">
+                        <a href="javascript:void(0)"><img src="/images/icon-user.png" /></a>
+                        <dl>
+                            <dd id="changePsw">修改密码</dd>
+                            <dd id="logout">退出</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="upper">
+            <div class="marks mark1">
+                <div class="line line1">
+                    <span class="number" id="number1"></span>
+                    <span class="unit">个</span>
+                </div>
+                <div class="line line2"><span class="catelog">地区</span></div>
+            </div>
+            <div class="marks mark2">
+                <div class="line line1">
+                    <span class="number" id="number2"></span>
+                    <span class="unit">个</span>
+                </div>
+                <div class="line line2"><span class="catelog">行业</span></div>
+            </div>
+            <div class="marks mark3">
+                <div class="line line1">
+                    <span class="number" id="number3"></span>
+                    <span class="unit">个</span>
+                </div>
+                <div class="line line2"><span class="catelog">企业</span></div>
+            </div>
+            <div class="chart-container" id="chart0"></div>
+            <ul class="switch">
+                <li id="switch-c" class="first active">碳排放</li>
+                <li id="switch-energy" class="last">能耗量</li>
+            </ul>
+        </div>
+        <div class="lower">
+            <div id="echt1"></div>
+            <div class="righttop-select">
+                <ul>
+                    <li id="thisarea">地区</li>
+                    <li class="selected" id="thisindustry">行业</li>
+                </ul>
+            </div>
+            <div class="bottom">
+                <div id="echt2"></div>
+                <div id="echt3"></div>
+            </div>
+            <div class="monbe">
+                <div class="monbe-bar">
+                    <div class="monbe-begin" data-month="1"></div>
+                    <div class="monbe-end" data-month="1"></div>
+                    <div class="monbe-step"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="opacity-div-for-modelwin"></div>
+    <div class="window" id="window1">
+        <div class="window-head" id="window-head1">
+            <span class="window-title">修改密码</span><a class="window-close"></a>
+        </div>
+        <div class="window-body window-form-body">
+            <form>
+                <ul class="length5">
+                    <li><label>原密码</label><input class="text" type="password" id="oldPsw" /></li>
+                    <li><label>新密码</label><input class="text" type="password" id="newPsw" /></li>
+                    <li><label>确认新密码</label><input class="text" type="password" id="newPswRepeat" /></li>
+                </ul>
+            </form>
+            <div class="window-buttons">
+                <span class="button1 window-submit">保存</span>
+                <span class="button1 window-cancel">取消</span>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/about/home/page"></script>
+</body>
+</html>

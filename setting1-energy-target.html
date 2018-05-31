@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="lib/Extjs-4.2.3/resources/css/ext-all.css" rel="stylesheet" />
+    <link href="CSS/style.css" rel="stylesheet" />
+    <link href="CSS/setting.css" rel="stylesheet" />
+    <link href="develop/setting1/energy-target/page.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="page-head">
+            <a href='home.html'><div class="logo">碳和能源计量数据平台</div></a>
+        </div>
+        <div class="title-bar">
+            <img src="/images/icon-back-active.png" />
+            节能指标配置
+        </div>
+        <div class="content">
+            <div class="panel panel-left-menu">
+                <ul class="menu">
+                    <li><a href="setting1-industry.html">行业配置</a></li>
+                    <li><a href="setting1-energy-medium.html">能源介质配置</a></li>
+                    <li><a href="setting1-calc-unit.html">计算单位配置</a></li>
+                    <li><a href="setting1-c_output-class.html">碳活动数据类别配置</a></li>
+                    <li><a href="setting1-c-source.html">碳活动数据配置</a></li>
+                    <li><a href="setting1-c-factor.html">碳排放因子配置</a></li>
+                    <li><a href="setting1-coefficient-config.html">排放因子参数配置</a></li>
+                    <li><a href="setting1-marking-factor.html">折标系数配置</a></li>
+                    <li><a href="setting1-energy-catalog.html">能耗指标类别配置</a></li>
+                    <li><a href="setting1-energy-limit.html">能耗限额配置</a></li>
+                    <li><a href="setting1-c-target.html">碳排放配额配置</a></li>
+                    <li class="active"><img src="images/bg-leftmenu.png" /><i>节能指标配置</i></li>
+                    <li><a href="setting1-product.html">物料类别配置</a></li>
+                    <!--<li><a href="setting1-materiel.html">物料配置</a></li>-->
+                    <!--<li><a href="setting1-formula.html">计算公式配置</a></li>-->
+                </ul>
+            </div>
+            <div class="panel panel-condition">
+                <ul class="left">
+                    <li class="label-text">
+                        <label>地区</label>
+                        <select class="region" id="search-area"></select>
+                    </li>
+                    <li class="label-text">
+                        <label>行业</label>
+                        <select class="region" id="search-business"></select>
+                    </li>
+                    <li class="label-text">
+                        <label>企业</label>
+                        <select class="" id="search-enterprise"></select>
+                    </li>
+                    <li class="label-text">
+                        <label>年份</label>
+                        <select class="" id="search-year"></select>
+                    </li>
+                    <li class="image-button search" id="search">
+                        <img src="images/icon-query.png" />
+                    </li>
+                </ul>
+                <ul class="right">
+                    <li class="image-text-button import">
+                        <div class="image"><img src="images/icon-import.png" /></div>导入
+                    </li>
+                    <li class="image-text-button add">
+                        <div class="image"><img src="images/icon-add.png" /></div>添加
+                    </li>
+                </ul>
+            </div>
+            <div class="panel panel-main">
+                <div class="grid-container" id="grid1"></div>
+                <div class="">
+                    <div class="page-description">
+                        当前第<span id="current-page"></span>条
+                        共计<span id="total-page"></span>条
+                    </div>
+                    <div class="pagin"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="opacity-div-for-modelwin"></div>
+    <div class="window" id="window1">
+        <div class="window-head" id="window-head1">
+            <span class="window-title">添加</span><a class="window-close"></a>
+        </div>
+        <div class="window-body window-form-body">
+            <form>
+                <input type="hidden" name="ESAVINGINDEXID" id="ESAVINGINDEXID" />
+                <ul class="length5">
+                    <li><label>地区</label><select name="PROVINCEID" id="PROVINCEID"></select></li>
+                    <li><label>行业</label><select name="BUSINESSID" id="BUSINESSID"></select></li>
+                    <li><label>企业名称</label><select name="ENTERPRISEID" id="ENTERPRISEID"></select></li>
+                    <li><label>单位</label><select name="UNITID" id="UNITID"></select></li>
+                    <li><label>年份</label><select id="ENERGYYEAR" name="ENERGYYEAR"></select></li>
+                    <li><label>节能指标值</label><input type="text" class="text" name="SAVINGVALUE" id="SAVINGVALUE" /></li>
+                </ul>
+            </form>
+            <div class="window-buttons">
+                <span class="button1 window-submit">保存</span>
+                <span class="button1 window-cancel">取消</span>
+            </div>
+        </div>
+    </div>
+    <script src="/js/common/rem.js"></script>
+    <script src="/js/config.js"></script>
+    <script src="/js/require-2.1.11.js" data-main="/develop/setting1/energy-target/page"></script>
+</body>
+</html>
