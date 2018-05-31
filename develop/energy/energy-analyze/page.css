@@ -1,0 +1,126 @@
+﻿
+
+/* 按钮样式 */
+.button1 { color: #fff; background-color: #389edc; font-size: 0.16rem; text-align: center; cursor: pointer; min-width: 0.94rem; border-radius: 0.05rem; }
+.button1:hover { background-color: #45aced; }
+.button1:active { background-color: #217bb3; }
+
+
+/* 通用的查询条件板 */
+.common-conditions { }
+.common-conditions .fields { position: absolute; top: 0.2rem; }
+.common-conditions .fields li.field { height: 0.4rem; }
+.common-conditions label { float: left; display: block; width: 0.8rem; text-align: right; font-size: 0.16rem; line-height: 0.25rem; }
+.common-conditions select,
+.common-conditions .select-panel { float: left; margin-left: 0.1rem; width: 2.8rem; height: 0.25rem; }
+/*.common-conditions .month-select-panel { float: left; margin-left: 0.1rem; width: 1.82rem; height: 0.25rem;}*/
+.common-conditions select option { text-indent: 0.1rem; }
+.common-conditions .target{ position: absolute; top: 2.15rem; left: 1rem; font-size:0;}
+.common-conditions .target .label { font-size: 0.16rem;  }
+.common-conditions .target-value { color:#f8a734; font-size: 0.48rem; margin-bottom:-0.1rem; }
+.common-conditions .target-unit {font-size: 0.16rem; }
+
+/* 页面总容器 */
+.home-container { min-width: 19rem; } 
+
+/* 主体部分 */
+.content { background-color: #f1f1f1; position: relative; height: 9.9rem; }
+
+/* panel */
+.panel { background-color: white; position: absolute; padding: 0.1rem; }
+#panel1 { width: 3.92rem; height: 2.8rem; left: 0.33rem; top: 0.09rem; }
+#panel2 { width: 13.8rem; height: 2.8rem; left: 4.58rem; top: 0.09rem; }
+#panel3 { width: 18.05rem; height: 5.52rem; left: 0.33rem; top: 3.18rem; }
+#panel4 { width: 5.02rem; height: 5.52rem; left: 13.36rem; top: 3.18rem; }
+
+/* box */
+.box { background-color: #f2f5f5; }
+
+
+/* panel1 */
+#panel1 .box { width: 100%; height: 100%; }
+
+/* panel2 */
+#panel2 .box { height: 2.8rem; }
+#panel2 #box2a { position: absolute; width: 3rem; left: 0.1rem; top: 0.1rem; }
+#panel2 #box2b { position: absolute; width: 2rem; left: 3.2rem; top: 0.1rem; }
+#panel2 #box2c { position: absolute; width: 6.5rem; left: 7.4rem; top: 0.1rem; }
+#panel2 #box2d { position: absolute; width: 2rem; left: 5.3rem; top: 0.1rem; }
+
+/* panel2 box2a */
+#box2a .box-title { font-size: 0.16rem; text-align: center; margin-top: 0.3rem; }
+#box2a ul.mcheck { margin-top:0.3rem; }
+#box2a ul.mcheck li { float:left; cursor: pointer; min-width:1.6rem; height:0.3rem;margin:0;clear:none }
+#box2a ul.mcheck li input{ margin-left:0.2rem; }
+#box2a ul.mcheck li cite { float: left; display: block; line-height:0.5rem; margin-left:0.4rem;  margin-right:0.1rem; width: 0.25rem; height: 0.25rem; background-image: url(/images/icon-checkbox.png); background-size:100% 100%; }
+#box2a ul.mcheck li.active cite { background-image: url(/images/icon-checkbox-checked.png); }
+#box2a ul.mcheck li select { width:2.3rem; margin-left:0.4rem; }
+#box2a ul.mcheck li div#defMultiSelect { width:2.3rem; margin-left:0.4rem; }
+#box2a ul.mcheck li i { font-size: 0.16rem; }
+
+/* 通用的查询条件板 */
+.common-conditions { }
+.common-conditions .fields { position: absolute; top: 0.2rem; }
+.common-conditions .fields li.field { height: 0.4rem; }
+.common-conditions label { float: left; display: block; width: 0.8rem; text-align: right; font-size: 0.16rem; line-height: 0.25rem; }
+.common-conditions select,
+.common-conditions .select-panel { float: left; margin-left: 0.1rem; width: 2.8rem; height: 0.25rem; }
+.common-conditions select option { text-indent: 0.1rem; }
+.common-conditions .target{ position: absolute; top: 2.15rem; left: 1rem; font-size:0;}
+.common-conditions .target .label { font-size: 0.16rem;  }
+.common-conditions .target-value { color:#f8a734; font-size: 0.48rem; margin-bottom:-0.1rem; }
+.common-conditions .target-unit {font-size: 0.16rem; }
+
+/* panel2 box2b */
+#box2b .box-title { font-size: 0.16rem; text-align: center; margin-top: 0.3rem; }
+
+
+/* panel2 box2d */
+#box2d .box-title { font-size: 0.16rem; text-align: center; margin-top: 0.3rem; }
+#box2d ul.radios { }
+#box2d ul.radios li { font-size: 0.16rem; float:left; margin-left: 0.3rem; margin-top: 0.4rem; cursor: pointer; }
+#box2d ul.radios li cite { float: left; display: block; width: 0.2rem; height: 0.2rem; background-image: url(/images/icon-radio.png); background-size:100% 100%;}
+#box2d ul.radios li.active cite { background-image: url(/images/icon-radio-checked.png); }
+
+/* panel2 box2c */
+#box2c ul.top-buttons { float: right; height: 0.4rem; }
+#box2c ul.top-buttons li { float: left; height: 0.33rem; line-height: 0.33rem; }
+#box2c .grid-container { clear: both; width: 6.5rem; height: 2.4rem; border: 1px solid #ccc; }
+
+/* panel3 */
+#panel3 .chart-container { width: 18.04rem; height: 5.52rem; }
+
+/* panel4 */
+#panel4 .panel-head { }
+#panel4 .panel-title { float: left; font-size: 0.16rem; line-height:0.4rem; }
+#panel4 .formula { font-size: 0.24rem; text-align: right;line-height:0.4rem; margin-right:0.1rem; }
+#panel4 .grid-container { margin-top: 0.1rem; width: 4.92rem; height: 5.03rem; border: 1px solid #ccc; }
+
+#panel2 .splitLine{width:98.9%;border:solid 0.01rem #ccc;position:relative;top:0.6rem}
+#panel2 .checkout cite{margin-left:0rem;margin-top:0.1rem;float:left;display:block;width:0.2rem;height:0.2rem;background:url(/images/icon-checkbox.png);background-size:100% 100%;cursor:pointer}
+#panel2 .checkout cite.checked{display:block;width:0.2rem;height:0.2rem;background:url(/images/icon-checkbox-checked.png);background-size:100% 100%;}
+#panel2 .checkout{padding-left:0rem;width:2.3rem;height:0.4rem;position:relative;top:0.7rem;left:0.35rem;}
+#txtview{line-height:0.4rem;margin-left:0.2rem;float:left;width:75%;height:0.4rem}
+#panel2 .bottom-op label{color:#389edc}
+/*#panel2 .bottom-op select{width:1.5rem;height:0.4rem;margin-left:0.2rem}*/
+#panel2 .box-title2{margin-left:0.1rem;margin-top:0.2rem;width:1rem;height:0.4rem;color:#389edc}
+
+#radio2{width:100%;height:0.5rem;position:relative;bottom:0.2rem}
+
+
+
+
+#box2b ul.mcheck.disabled li cite { background-image: url(/images/icon-checkbox.png); }
+#box2b ul.mcheck.disabled li.active cite { background-image: url(/images/icon-checkbox-checked.png); }
+ul.radios li{clear:none}
+
+#standardEn{width:1.6rem;height:0.3rem;margin-left:0.2rem}
+
+ul#radio2 li select{width:1.5rem;margin-top:0.15rem} 
+
+ul#radio2 li label{margin-left:0.1rem}
+
+
+#methodMcheck{text-indent:0.1rem}
+
+

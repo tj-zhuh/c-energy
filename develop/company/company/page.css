@@ -1,0 +1,172 @@
+﻿
+/* 通用的查询条件板 */
+.common-conditions { }
+.common-conditions .fields { position: absolute; top: 0.2rem; }
+.common-conditions .fields li.field { height: 0.4rem; }
+.common-conditions label { float: left; display: block; width: 0.8rem; text-align: right; font-size: 0.16rem; line-height: 0.25rem; }
+.common-conditions select,
+.common-conditions .select-panel { float: left; margin-left: 0.1rem; width: 2.8rem; height: 0.25rem; }
+/*.common-conditions .month-select-panel { float: left; margin-left: 0.1rem; width: 1.82rem; height: 0.25rem;}*/
+.common-conditions select option { text-indent: 0.1rem; }
+.common-conditions .target{ position: absolute; top: 2.15rem; left: 1rem; font-size:0;}
+.common-conditions .target .label { font-size: 0.16rem;  }
+.common-conditions .target-value { color:#f8a734; font-size: 0.48rem; margin-bottom:-0.1rem; }
+.common-conditions .target-unit {font-size: 0.16rem; }
+.common-conditions .image-button { background-color: #389edc; width: 0.4rem; height: 0.4rem; text-align: center; border-radius:0.05rem;cursor:pointer;float:right;}
+.common-conditions .image-button:hover {background-color:#45aced;}
+.common-conditions .image-button img { margin-top: 0.03rem;width:0.36rem;height:0.36rem }
+
+/* 页面总容器 */
+.home-container { min-width: 19rem; } 
+
+/* 主体部分 */
+.content { background-color: #f1f1f1; position: relative; height: 9.9rem; }
+
+/* panel */
+.panel { background-color: white; position: absolute; padding: 0.1rem; }
+#panel1 { width: 3.92rem; height: 2.8rem; left: 0.33rem; top: 0.09rem; }
+#panel2 { width: 13.8rem; height: 2.8rem; left: 4.58rem; top: 0.09rem; }
+#panel3 { width: 3.92rem; height: 6.32rem; left: 0.33rem; top: 3.18rem; }
+#panel4 { width: 13.8rem; height: 6.32rem; left: 4.58rem; top: 3.18rem; background-color: #f2f2f2; border:1px solid #ccc;}
+#panel5 { width: 13.8rem; height: 6.32rem; left: 4.58rem; top: 3.18rem; background-color: #f2f2f2;  border:1px solid #ccc;}
+
+
+/* box */
+.box { background-color: #f2f5f5; }
+
+/* panel1 */
+#panel1 .box { width: 100%; height: 100%; }
+
+/* panel2 */
+#panel2 .grid-title{ background-position: 0rem 0rem;height: 0.4rem;position:absolute;}
+#panel2 .grid-container { clear: both; width: 13.74rem; height: 2.24rem; border: 1px solid #ccc; position:absolute;margin-top:0.5rem}
+#panel2 .grid-title-img1
+{
+background-image: url("/images/company-left.png");
+background-size: 3rem cover;
+width:3rem;
+height:0.4rem;
+margin-left:-0.1rem;
+margin-top:-0.15rem;
+}
+ #panel2 .grid-title-img2
+{
+background-image: url("/images/company-right.png");
+background-size: 0.4rem cover;
+width: 0.25rem;
+height:0.4rem;
+margin-left: 2.89rem;
+margin-top: -0.4rem;
+}
+
+ #panel2 .grid-title-text
+{
+font-size:0.2rem;
+font-family:"Microsoft YaHei";
+color:#fff;
+text-align:center;
+vertical-align:middle;
+padding-top:0.05rem;
+padding-bottom:0.05rem;
+}
+
+/* panel3 */
+#panel3 .box {height: 3.1rem; color: #fff; font-size:0.3rem;font-family:"Microsoft YaHei";}
+#panel3 .box1{width:3.8rem;position: absolute; margin-top:0rem;padding-left: 0.1rem; background-color:#00bbd3;}
+#panel3 .box2{width:3.9rem;position: absolute; margin-top:3.2rem;margin-left: 0rem;background-color:#b96fe8;}
+
+#panel3 .energy-img {background: url("/images/company-energy.png");position:absolute;width:1.96rem;height:1.96rem;}
+#panel3 .energy-value {position:absolute; margin-top: .0rem;margin-left: 2.1rem;font-size:0.4rem;}
+#panel3 .energy-unit {position:absolute; margin-top: .5rem;margin-left: 3.1rem;font-size:0.3rem;}
+#panel3 .energy-unit-C {margin-left: 3.0rem;}
+#panel3 .energy-title {position:absolute; margin-top: 1.0rem;margin-left: 2.4rem;font-size:0.3rem;width:1.5rem;}
+#panel3 .energy-title-C {margin-left: 2.8rem;}
+
+/*panel13 addition */
+#panel3 .energy-value2 {position:absolute; margin-top: 1.0rem;margin-left: 2.1rem;font-size:0.4rem;}
+#panel3 .energy-unit2 {position:absolute; margin-top: 1.5rem;margin-left: 3.1rem;font-size:0.3rem;}
+#panel3 .energy-unit-C2 {margin-left: 3.0rem;}
+#panel3 .energy-title2 {position:absolute; margin-top: 2.0rem;margin-left: 2.4rem;font-size:0.3rem;width:1.5rem;}
+#panel3 .energy-title-C2 {margin-left: 2.5rem;}
+
+#panel3 .box-energy {position:absolute; margin-top: 2.5rem;margin-left: -0.1rem;width:3.9rem; height: 0.6rem;background-color: #156a9f;}
+#panel3 .c-img {background-image: url("/images/company-c.png"); position:absolute;width:1.96rem;height:1.96rem; }
+#panel3 .box-c {position:absolute; margin-top: 2.5rem;margin-left: 0rem;width:3.9rem; height: 0.6rem;background-color: #7319ac;}
+
+#panel3  a {position:absolute;margin-top: 0.14rem;margin-left: 0.6rem;cursor:pointer;color: #fff;}
+
+.chart-container { position:absolute;margin-top:0.9rem;margin-left:-0.11rem; width: 14rem; height: 5.52rem;background-color:#fff; border:1px solid #ccc;}
+
+.chart-container2 { position:absolute;margin-top:0.6rem;margin-left:-0.01rem; width: 14rem; height:4.92rem;background-color:#fff; border:1px solid #ccc;}
+
+/*历史对比条目用 */
+.chart-container11 { position:absolute; margin-left:-0.01rem; width: 5.07rem; height:4.92rem;background-color:#fff; border:1px solid #ccc;}
+.chart-container12 { position:absolute; margin-left:5.1rem; width: 8.9rem; height:4.92rem;background-color:#fff; border:1px solid #ccc;}
+
+/* panel4 */
+.panel .nav{
+float: right;
+height: 0.4rem;
+margin-top: 0.1rem;
+}
+
+.panel .nav li{
+font-size: 0.3rem;
+font-family:"Microsoft YaHei";
+float: left;
+color: #000;
+font-size: 0.16rem;
+text-align: center;
+cursor: pointer;
+min-width: 0.94rem;
+border-radius: 0.05rem;
+line-height: 0.4rem;
+margin-right: 0.1rem;
+padding-left: 0.1rem;
+padding-right: 0.1rem;
+min-width: 1.2rem;
+}
+
+.panel .nav li:hover {
+color: #fff;
+background-color: #45aced; 
+}
+
+.panel .nav li.active {
+color: #fff;
+background-color: #389edc; 
+}
+.panel .chart-title {
+position:absolute;
+margin-top: 0.14rem;
+margin-left: 0.1rem;
+color: #389edc;
+font-size: 0.3rem;
+font-family:"Microsoft YaHei";
+}
+
+.l{
+font-size: 0.15rem;
+height: 0.4rem;
+position: absolute;
+margin-top: 0.19rem;
+}
+.l1l{
+color: #000;
+margin-left: 9.2rem;
+}
+.l1c{
+color: #389ed9;
+margin-left: 9.7rem;
+}
+.l1r{
+color: #000;
+margin-left: 13.0rem;
+}
+.l1u{
+color: #389ed9;
+margin-left: 13.5rem;
+}
+
+.select-type { float: left; margin-left: 1.1rem; width: 2rem; height: 0.25rem; }
+

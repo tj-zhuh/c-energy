@@ -1,0 +1,72 @@
+﻿
+
+/* 按钮样式 */
+.button1 { color: #fff; background-color: #389edc; font-size: 0.16rem; text-align: center; cursor: pointer; min-width: 0.94rem; border-radius: 0.05rem; }
+.button1:hover { background-color: #45aced; }
+.button1:active { background-color: #217bb3; }
+
+
+/* 通用的查询条件板 */
+.common-conditions { }
+.common-conditions .fields { position: absolute; top: 0.2rem; }
+.common-conditions .fields li.field { height: 0.4rem; }
+.common-conditions label { float: left; display: block; width: 0.8rem; text-align: right; font-size: 0.16rem; line-height: 0.25rem; }
+.common-conditions select,
+.common-conditions .select-panel { float: left; margin-left: 0.1rem; width: 2.8rem; height: 0.25rem; }
+/*.common-conditions .month-select-panel { float: left; margin-left: 0.1rem; width: 1.82rem; height: 0.25rem;}*/
+.common-conditions select option { text-indent: 0.1rem; }
+.common-conditions .goal{ position: absolute; top: 2.15rem; left: 1rem; font-size:0;}
+.common-conditions .goal .label { font-size: 0.16rem;  }
+.common-conditions .goal-value { color:#f8a734; font-size: 0.48rem; margin-bottom:-0.1rem; }
+.common-conditions .goal-unit {font-size: 0.16rem; }
+
+/* 页面总容器 */
+.home-container { min-width: 19rem; } 
+
+/* 主体部分 */
+.content { background-color: #f1f1f1; position: relative; height: 9.9rem; }
+
+/* panel */
+.panel { background-color: white; position: absolute; padding: 0.1rem; }
+#panel1 { width: 3.92rem; height: 2.8rem; left: 0.33rem; top: 0.09rem; }
+#panel2 { width: 13.8rem; height: 2.8rem; left: 4.58rem; top: 0.09rem; }
+#panel3 { width: 10.7rem; height: 5.52rem; left: 0.33rem; top: 3.18rem; }
+#panel4 { width: 7.02rem; height: 5.52rem; left: 11.36rem; top: 3.18rem; }
+
+/* box */
+.box { background-color: #f2f5f5; }
+
+
+/* panel1 */
+#panel1 .box { width: 100%; height: 100%; }
+
+/* panel2 */
+#panel2 .box { height: 2.8rem; }
+#panel2 #box2a { position: absolute; width: 3rem; left: 0.1rem; top: 0.1rem; }
+#panel2 #box2b { position: absolute; width: 2rem; left: 3.2rem; top: 0.1rem; }
+#panel2 #box2c { position: absolute; width: 8.5rem; left: 5.3rem; top: 0.1rem; }
+
+/* panel2 box2a */
+#box2a .box-title { font-size: 0.16rem; text-align: center; margin-top: 0.3rem; }
+#box2a select { width: 2rem; display: block; margin-left: auto; margin-right: auto; margin-top: 0.2rem; }
+#box2a .line { font-size: 0.16rem; margin-top: 0.2rem; margin-left: auto; margin-right: auto; width: 2rem; }
+#box2a .line input { width: 1.2rem; }
+
+/* panel2 box2b */
+#box2b .box-title { font-size: 0.16rem; text-align: center; margin-top: 0.3rem; }
+
+/* panel2 box2c */
+#box2c ul.top-buttons { float: right; height: 0.4rem; }
+#box2c ul.top-buttons li { float: left; height: 0.33rem; line-height: 0.33rem; }
+#box2c .grid-container { clear: both; width: 8.5rem; height: 2.4rem; border: 1px solid #ccc; }
+
+/* panel3 */
+#panel3 .chart-container { width: 12.7rem; height: 5.52rem; }
+
+/* panel4 */
+#panel4 .panel-head { }
+#panel4 .panel-title { float: left; font-size: 0.16rem; line-height:0.4rem; }
+#panel4 .formula { font-size: 0.24rem; text-align: right;line-height:0.4rem; margin-right:0.1rem; }
+#panel4 .grid-container { margin-top: 0.1rem; width: 6.92rem; height: 5.03rem; border: 1px solid #ccc; }
+
+#panel3 #chart1{width:10.7rem}

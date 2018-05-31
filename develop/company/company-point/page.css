@@ -1,0 +1,95 @@
+﻿
+
+body { background-color: #f1f1f1; }
+
+
+
+/* 页面总容器 */
+.home-container { min-width: 19rem; }
+
+/* 主体部分 */
+.content { background-color: #f1f1f1; position: relative; height: 8rem; }
+
+/* panel */
+.panel { background-color: #ffffff; position: absolute; }
+.panel-condition { width: 18.2rem; height: 0.82rem; left: 0.4rem; top: 0.2rem; }
+.panel-main { width: 18rem; height: 4.8rem; left: 0.4rem; top: 1.12rem; }
+.panel-bottom { width: 18.2rem; height: 4.8rem; left: 0.4rem; top: 6.22rem; margin-bottom: 0.1rem; }
+
+/* 菜单 */
+ul.menu { margin-left: 0.2rem; margin-top: 0.2rem; }
+ul.menu li { position: relative; width: 2.25rem; height: 0.63rem; border: 1px solid #eaeaea; line-height: 0.63rem; text-align: center; margin-top: -1px; }
+ul.menu img { position: absolute; left: -0.04rem; width: 2.49rem; height: 0.63rem; }
+ul.menu a { font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #389edc; }
+ul.menu i { position: absolute; left: 0; right: 0; top: 0; bottom: 0; font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #fff; z-index: 99; }
+
+/* 查询条件框 */
+.panel-condition .left { float: left; margin-top: 0.26rem; margin-left: 0.2rem; }
+.panel-condition .left li { float: left; margin-right: 0.2rem; }
+.panel-condition .left .label-text { }
+.panel-condition .left .label-text .label { color: #484848; font-family: 'Microsoft YaHei'; font-size: 0.1867rem; line-height: 0.4rem; }
+.panel-condition .left .label-text input { color: #484848; font-family: SimSun; font-size: 0.16rem; height: 0.4rem; line-height: 0.4rem; text-indent: 0.1rem; border: 1px solid #e1e1e1; }
+.panel-condition .left .image-button { background-color: #389edc; width: 0.4rem; height: 0.4rem; text-align: center; border-radius: 0.05rem; cursor: pointer; }
+.panel-condition .left .image-button:hover { background-color: #45aced; }
+
+
+.panel-condition .right { float: right; margin-top: 0.25rem; margin-right: 0.2rem; }
+.panel-condition .right li { float: left; font-size: 0.24rem; font-family: 'Microsoft YaHei'; color: #ffffff; margin-right: 0.35rem; line-height: 0.37rem; cursor: pointer; text-align: center; }
+.panel-condition .right li .image { float: left; width: 0.37rem; height: 0.37rem; border-radius: 0.02rem; background-color: #389edc; margin-right: 0.1rem; }
+.panel-condition .right li:hover .image { background-color: #45aced; }
+.panel-condition .right li:active .image { background-color: #217bb3; }
+.panel-condition .right li .image img { margin-left: 0.04rem; margin-top: 0.04rem; }
+.panel-condition .right .image-text-button { height: 0.4rem; width: 0.7rem; background-color: #389edc; border-radius: 0.05rem; cursor: pointer; }
+.panel-condition .right .image-text-button:hover { background-color: #45aced; }
+
+/* grid */
+.panel-main { padding: 0.1rem; }
+.grid-container { height: 4.1rem; width: 18rem; position: relative; margin-left: auto; margin-right: auto; border: solid 1px #dadada; }
+.grid-container .x-grid-header-ct .x-box-item { height: 0.5rem; line-height: 0.5rem; border-left: solid 1px #dadada; border-bottom: solid 1px #dadada; }
+.grid-container .x-grid-cell { line-height: 0.45rem; border-left: solid 1px #dadada; border-bottom: solid 1px #dadada; }
+
+.grid-container .btn-key { cursor: pointer; width: 0.3rem; height: 0.3rem; background-size: 100% 100%; float: left; }
+.grid-container .btn-key { background-image: url(/images/btn-edit.png); }
+.grid-container .btn-key:hover { background-image: url(/images/btn-edit-hover.png); }
+.grid-container .btn-key:active { background-image: url(/images/btn-edit-active.png); }
+.grid-container .btn-delete { margin-left: 0.2rem; }
+
+.grid-container .image-buttons { width: 1.3rem; }
+
+/* window */
+#window1 { height: 3.5rem; }
+
+/*贴图修改*/
+.panel-condition .left .image-button img { margin-top: 0.03rem; width: 0.36rem; height: 0.36rem; }
+.panel-condition .right li .image img { margin-left: 0.04rem; margin-top: 0.04rem; width: 0.29rem; height: 0.29rem; }
+
+
+ul.left li.label-text select { width: 2rem; height: 0.4rem; }
+
+/* 氏谱图 */
+.clan { position: relative; overflow: auto; }
+.clan .inner { margin: 0 auto; position: relative; }
+.clan .hide { margin-left: -9999px; }
+.clan .box { position: absolute; border: 1px solid #ccc; height: 0.8rem; }
+.clan .vline { position: absolute; border-left: 2px solid #8dc2e2; }
+.clan .hline { position: absolute; border-top: 2px solid #8dc2e2; }
+
+/* 氏谱图框框 */
+.clan .box { border: 1px solid #5389ad;}
+.clan .box.error { border: 1px solid #e95f5f; }
+.clan .box .div1,
+.clan .box .div2 { height:0.4rem; line-height:0.4rem; text-align:center; font-size:0.14rem;  }
+.clan .box .div1 { color:#fff; background-color:#8dc2e4;}
+.clan .box.error .div1 { background-color:#ea5e5f;}
+
+/* 氏谱图 提示tooltip */
+.tooltip { position:absolute; display: none; min-width: 1rem; height: 0.35rem; text-align: center; line-height: 0.35rem; padding-left: 0.1rem; padding-right: 0.1rem; z-index: 3; background-color: #000; border-radius: 2px 2px; }
+
+/*zbc后需修改*/
+
+/*condition时间框相关*/
+li.field label { float: left; margin-top: 0.05rem; }
+
+.month-select-panel { float: left; margin-top: 0.05rem; margin-left: 0.1rem; width: 2rem; }
+
+.select-box.month-select-box { z-index: 80; }

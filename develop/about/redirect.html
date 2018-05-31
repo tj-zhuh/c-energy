@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <script>
+
+        function parseURL(url) {
+            return {
+                url_no_param: (function () {
+                    return url.split('?')[0];
+                })(),
+                params: (function () {
+                    var ret = {};
+                    var seg = url.split('?')[1];
+
+                    if (seg) {
+                        var ret = {};
+                        var arr = seg.split('&');
+                        for (var i in arr) {
+                            if (typeof arr[i] != 'string') continue;
+                            s = arr[i].split('=');
+                            ret[s[0]] = s[1];
+                        }
+                    }
+
+                    return ret;
+                })()
+            };
+        }
+
+        var hrefObj = parseURL(window.location.href);
+        var p = hrefObj.params.p;
+        window.location.href = p;
+
+    </script>
+</head>
+<body>
+    <img src="../../images2/loading.gif" />
+</body>
+</html>

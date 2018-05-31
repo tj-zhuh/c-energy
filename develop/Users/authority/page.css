@@ -1,0 +1,57 @@
+﻿
+
+body { background-color: #f1f1f1; }
+
+
+
+/* 页面总容器 */
+.home-container { min-width: 19rem; }
+
+/* 主体部分 */
+.content { background-color: #f1f1f1; position: relative; height: 8rem; }
+
+/* panel */
+.panel { background-color: white; position: absolute; }
+.panel-left-menu { width: 2.65rem; height: 7.5rem; left: 0.35rem; top: 0.1rem; }
+.panel-condition { width: 15.5rem; height: 0.82rem; left: 3.15rem; top: 0.1rem; }
+.panel-main { width: 15.3rem; height: 6.4rem; left: 3.15rem; top: 1.02rem; }
+.panel-condition select { width: 1rem; }
+
+/* 菜单 */
+ul.menu { margin-left: 0.2rem; margin-top: 0.2rem; }
+ul.menu li { position: relative; width: 2.25rem; height: 0.63rem; border: 1px solid #eaeaea; line-height: 0.63rem; text-align: center; margin-top: -1px; }
+ul.menu img { position: absolute; left: -0.04rem; width: 2.49rem; height: 0.63rem; }
+ul.menu a { font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #389edc; }
+ul.menu i { position: absolute; left: 0; right: 0; top: 0; bottom: 0; font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #fff; z-index: 99; }
+
+/* 查询条件框 */
+.panel-condition .left { float: left; margin-top: 0.26rem; margin-left: 0.2rem; }
+.panel-condition .left li { float: left; margin-right: 0.2rem; }
+.panel-condition .left .label-text { }
+.panel-condition .left .label-text .label { color: #484848; font-family: 'Microsoft YaHei'; font-size: 0.1867rem; line-height: 0.45rem; }
+.panel-condition .left .label-text input { color: #484848; font-family: SimSun; font-size: 0.16rem; height: 0.45rem; line-height: 0.45rem; width: 2.5rem; text-indent: 0.1rem; border: 1px solid #e1e1e1; }
+
+
+.panel-condition .right { float: right; margin-top: 0.25rem; margin-right: 0.2rem; }
+.panel-condition .right li { float: left; font-size: 0.24rem; font-family: 'Microsoft YaHei'; color: #ffffff; margin-right: 0.35rem; line-height: 0.37rem; cursor: pointer; text-align: center; }
+.panel-condition .right li .image { float: left; width: 0.37rem; height: 0.37rem; border-radius: 0.02rem; background-color: #389edc; margin-right: 0.1rem; }
+.panel-condition .right li:hover .image { background-color: #45aced; }
+.panel-condition .right li:active .image { background-color: #217bb3; }
+.panel-condition .right li .image img { margin-left: 0.04rem; margin-top: 0.04rem; }
+.panel-condition .right .image-text-button { height: 0.4rem; width: 0.7rem; background-color: #389edc; border-radius: 0.05rem; cursor: pointer; }
+.panel-condition .right .image-text-button:hover { background-color: #45aced; }
+
+/* 功能列表 */
+.function-container { width: 7.5rem; margin-left: auto; margin-right: auto; }
+.function-container .title { height: 0.5rem; border-bottom: solid 1px #389edc; }
+.function-container .title-column { float: left; line-height: 0.5rem; font-family: 'Microsoft YaHei'; color: #389edc; text-align: center; }
+.function-container .title-column1 { width: 2.5rem; }
+.function-container .title-column2 { width: 2.5rem; }
+.function-container .title-column3 { width: 2rem; }
+
+.function-container ul { overflow-x: hidden; overflow-y: auto; height: 5rem; }
+.function-container li { cursor: pointer; width: 7.5rem; height: 0.5rem; line-height: 0.5rem; font-family: 'Microsoft YaHei'; border-bottom: solid 1px #389edc; }
+.function-container .column1 { float: left; width: 2.5rem; text-align: center; }
+.function-container .column2 { float: left; width: 2.5rem; text-align: center; }
+.function-container cite { float: left; margin-top: 0.125rem; margin-left: 0.9rem; height: 0.25rem; width: 0.25rem; background-image: url(/images/icon-checkbox-checked-disabled.png); background-size: 100% 100%; }
+.function-container li.active cite { background-image: url(/images/icon-checkbox-checked.png); }

@@ -1,0 +1,217 @@
+﻿
+.body {
+    clear:both;
+}
+/* 通用的查询条件板 */
+/*.common-conditions { }
+.common-conditions .fields { position: absolute; top: 0.2rem; }
+.common-conditions .fields li.field { height: 0.4rem; }
+.common-conditions label { /*float: left; display: block; width: 0.8rem; text-align: right; font-size: 0.16rem; line-height: 0.25rem; }
+.common-conditions select,
+.common-conditions .select-panel { float: left; margin-left: 0.1rem; width: 2.8rem; height: 0.25rem; }
+.common-conditions .month-select-panel { float: left; margin-left: 0.1rem; width: 1.82rem; height: 0.25rem;}
+.common-conditions select option { text-indent: 0.1rem; }
+.common-conditions .target{ position: absolute; top: 2.15rem; left: 1rem; font-size:0;}
+.common-conditions .target .label { font-size: 0.16rem;  }
+.common-conditions .target-value { color:#f8a734; font-size: 0.48rem; margin-bottom:-0.1rem; }
+.common-conditions .target-unit {font-size: 0.16rem; }
+.common-conditions .image-button {background-color: #389edc;width: 0.4rem;height: 0.4rem;text-align: center;border-radius: 0.05rem;cursor: pointer;margin-top:0.3rem; margin-left:8rem;}
+.common-conditions #beginSequenceBox{z-index:9999;}
+.common-conditions #endSequenceBox{z-index:9998;}*/
+
+
+/* 页面总容器 */
+.home-container { min-width: 19rem; } 
+
+/* 主体部分 */
+.content { background-color: #f1f1f1; position: relative; height: 9.9rem; }
+
+.queryul{
+position: absolute;
+margin-left: 0.68rem;
+height:0.3rem;
+}
+
+.startDate{ 
+margin-left:4rem;
+width: 1.9rem;
+position: absolute;
+margin-left: 0.9rem;
+margin-top: 0.2rem;
+}
+
+.endDate{ 
+margin-left:4rem;
+width: 2rem;
+}
+
+.energyType{
+margin-left:7.2rem;
+width: 2rem;
+}
+
+.startDateLabel{
+width: 0.8rem;
+position: absolute;
+margin-left: 0rem;
+margin-top: 0.2rem;
+}
+
+.endDateLabel{
+margin-left: 3.15rem;
+}
+
+.energyTypeLabel{
+margin-left: 6.35rem;
+}
+
+.name{
+position: absolute;
+margin-top: -0.65rem;
+margin-left: 0.6rem;
+color: #389ed9;
+font-size: 0.3rem;
+}
+
+.state{
+position: absolute;
+margin-top: -0.65rem;
+margin-left: 16.1rem;
+color: #389ed9;
+font-size: 0.3rem;
+}
+
+.statehr{
+background-color:#0094ff;
+position: absolute;
+margin-top: -0.07rem;
+margin-left: 16.1rem;
+width: 1.8rem;
+height: 0.07rem
+}
+
+/* panel */
+.panel { width: 17.8rem; height: 2rem; left: 0.6rem;position: absolute; padding: 0.05rem;}
+#panel1 {top: 0.65rem; }
+#panel2 {top: 2.85rem; }
+#panel3 {top: 5.08rem; }
+#panel4 {top: 7.33rem; }
+
+/* box */
+.box { background-color: #fff; height: 2rem; border:1px #ccc solid;position: absolute;  }
+.boxa { width : 4.22rem;  }
+.boxb { width: 13.48rem;margin-left: 4.22rem; }
+
+/* panel1 */
+#panel1 #box1a { background-color: #e8926e;margin-top:0rem; margin-left: 0rem; }
+#panel1 #box1b {margin-top:0rem;  }
+.p1{ color: #fff;font-size: 0.3rem;width: 3rem;margin-top:0.2rem; text-align:left; padding-left:0.09rem}
+.p2{ color: #fff;font-size: 0.6rem;width: 1rem;margin-top:0.05rem; margin-left: 1.1rem; }
+.p3{ color: #fff;font-size: 0.3rem;width: 1rem;margin-top:-0.5rem; margin-left: 2.1rem; position:absolute; }
+.p4{ color: #fff;font-size: 0.35rem;width: 4rem;margin-top:0rem;text-align:right; }
+.boxb-value{
+    position: absolute;
+    padding-left:0.38rem;
+}
+
+.l{
+font-size: 0.2rem;
+width: 1.2rem;
+height: 0.4rem;
+position: absolute;
+margin-top: 0.3rem;
+}
+.l1{
+margin-top: 0.3rem;
+}
+.l2{
+margin-top: 0.85rem;
+}
+.l3{
+margin-top: 1.4rem;
+}
+.ll{
+color: #389ed9;
+margin-left: 0rem;
+}
+.lr{
+color: #000; 
+margin-left: 0.85rem;
+}
+.boxb-line{
+    position: absolute;
+    margin-left:2.48rem;
+    width:11.5rem;
+    height:2.7rem;    
+    /*border:1px solid #000;*/
+    margin-top: -0.3rem;
+}
+
+/* panel2 */
+#panel2 #box2a {background-color: #b96fe8;margin-top:0rem; margin-left: 0rem; }
+#panel2 #box2b {margin-top:0rem; }
+
+/* panel3 */
+#panel3 #box3a {background-color: #00bbd3;margin-top:0rem; margin-left: 0rem; }
+#panel3 #box3b {margin-top:0rem;}
+
+/* panel4 */
+#panel4 #box4a {background-color: #e9c06c;margin-top:0rem; margin-left: 0rem; }
+#panel4 #box4b {margin-top:0rem;}
+
+.paginbox {
+    position: absolute;
+    padding: 0 0.12rem;
+    height: 0.5rem;
+    width: 14rem;
+    left: 4.5rem;
+    top: 9.4rem;
+    font-size: 0.2rem;
+    font-family: 'Microsoft YaHei';
+}
+.page-description {
+    float: left;
+    color: #5a5a5a;
+    line-height: 0.4rem;
+}
+.paginList {
+    position: absolute;
+    height: 0.5rem;
+    width: 7rem;
+    right: 0rem;
+    top: 0.05rem;
+}
+.paginList .paginationjs-prev a, .paginList .paginationjs-next a{
+    font-size: 0.16rem;
+    font-family: 'Microsoft YaHei';
+}
+.paginListUl {
+    position: absolute;
+    right: 0.5rem;
+}
+paginList li {
+    font-size: 0.16rem;
+    font-family: 'Microsoft YaHei';
+    float: left;
+    width: 0.5rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    margin-left: -1px;
+    cursor: pointer;
+}
+.paginList .paginationjs-prev, .paginationjs-next {
+  width: 0.6rem;
+}
+.paginList .disabled {
+  cursor: default;
+}
+.paginList .active {
+  background-color: #389edc;
+  cursor: pointer;
+}
+
+.image-button {background-color: #389edc;width: 0.4rem;height: 0.4rem;text-align: center;border-radius: 0.05rem;cursor: pointer;margin-top:0.1rem; float: right; margin-left:9.5rem;margin-top:0.15rem;}
+
+.company-name {color: #389ed9;  margin-left:0rem;width:5rem;height: 0.6rem;  line-height: 0.6rem;  font-size: 0.32rem;  padding-left: 0rem;  background-color: #ffffff;}

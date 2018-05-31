@@ -1,0 +1,152 @@
+﻿
+/* 按钮样式 */
+/*.button1 { color: #fff; background-color: #389edc; font-size: 0.16rem; text-align: center; cursor: pointer; min-width: 0.94rem; border-radius: 0.05rem; }
+.button1:hover { background-color: #45aced; }
+.button1:active { background-color: #217bb3; }*/
+
+/* 通用的查询条件板 */
+.common-conditions { }
+.common-conditions .fields { position: absolute; top: 0.2rem; }
+.common-conditions .fields li.field { height: 0.4rem; }
+.common-conditions label { float: left; display: block; width: 0.8rem; text-align: right; font-size: 0.16rem; line-height: 0.25rem; }
+.common-conditions select,
+.common-conditions .select-panel { float: left; margin-left: 0.1rem; width: 2.8rem; height: 0.25rem; }
+/*.common-conditions .month-select-panel { float: left; margin-left: 0.1rem; width: 1.82rem; height: 0.25rem;}*/
+.common-conditions select option { text-indent: 0.1rem; }
+.common-conditions .target{ position: absolute; top: 2.15rem; left: 1rem; font-size:0;}
+.common-conditions .target .label { font-size: 0.16rem;  }
+.common-conditions .target-value { color:#f8a734; font-size: 0.48rem; margin-bottom:-0.1rem; }
+.common-conditions .target-unit {font-size: 0.16rem; }
+.common-conditions .image-button {background-color: #389edc;width: 0.4rem;height: 0.4rem;text-align: center;border-radius: 0.05rem;cursor: pointer;margin-top:0.1rem; float: right;}
+.common-conditions #beginSequenceBox{z-index:9999;}
+.common-conditions #endSequenceBox{z-index:9998;}
+
+/* 页面总容器 */
+.home-container { min-width: 19rem; } 
+
+/* 主体部分 */
+.content { background-color: #f1f1f1; position: relative; height: 9.9rem; }
+
+/* panel */
+.panel { background-color: white; position: absolute; padding: 0.1rem; }
+#panel1 { width: 3.92rem; height: 2.8rem; left: 0.33rem; top: 0.09rem; }
+#panel2 { width: 3.92rem; height: 6.34rem; left: 0.33rem; top: 3.18rem; }
+
+.panel-chart{width: 13.8rem; height: 2rem; left: 4.6rem;} 
+#panel3 {top: 0.09rem; }
+#panel4 {top: 2.39rem; }
+#panel5 {top: 4.79rem; }
+#panel6 {top: 7.19rem; }
+
+.grid-container { clear: both; width: 3.9rem; height: 6.3rem; border: 1px solid #ccc; }
+
+ box 
+.box { background-color: #f2f5f5; }
+.boxb-value{
+    position: absolute;
+    padding-left:0.38rem;
+}
+
+.l{
+font-size: 0.1rem;
+height: 0.4rem;
+position: absolute;
+margin-top: 0.01rem;
+}
+.l1l{
+color: #389ed9;
+font-size: 0.22rem;
+margin-left: 0.2rem;
+}
+.l1c{
+color: #000;
+margin-left: 3.2rem;
+}
+.l1r{
+color: #000;
+margin-left: 6.9rem;
+}
+.l1p{
+color: #000;
+margin-left: 12.2rem;
+}
+.l1pn{
+color: #f8a734;
+font-size: 0.3rem;
+margin-left: 12.8rem;
+margin-top: -0.05rem;
+}
+.l1Cur{
+margin-top: 0.75rem;
+width:2rem;
+}
+.l1Unit{
+margin-top: 0.35rem;
+margin-left: 1.4rem;
+width:1rem;
+}
+.l1Last{
+margin-top: 1.4rem;
+width:1rem;
+}
+
+.boxb-line{
+    position: absolute;
+    margin-left:0.1rem;
+    width:14.5rem;
+    height:2.65rem;    
+    margin-top: -0.2rem;
+    /*border:1px solid #000;*/
+}
+.paginbox {
+    position: absolute;
+    padding: 0 0.12rem;
+    height: 0.5rem;
+    width: 14rem;
+    left: 4.5rem;
+    top: 9.4rem;
+    font-size: 0.16rem;
+    font-family: 'Microsoft YaHei';
+}
+.page-description {
+    float: left;
+    color: #5a5a5a;
+    line-height: 0.4rem;
+}
+.paginList {
+    position: absolute;
+    height: 0.5rem;
+    width: 7rem;
+    right: 0rem;
+    top: 0.05rem;
+}
+.paginList .paginationjs-prev a, .paginList .paginationjs-next a{
+    font-size: 0.16rem;
+    font-family: 'Microsoft YaHei';
+}
+.paginListUl {
+    position: absolute;
+    right: 0.5rem;
+}
+paginList li {
+    font-size: 0.16rem;
+    font-family: 'Microsoft YaHei';
+    float: left;
+    width: 0.5rem;
+    height: 0.35rem;
+    line-height: 0.35rem;
+    text-align: center;
+    border: 1px solid #cdcdcd;
+    margin-left: -1px;
+    cursor: pointer;
+}
+.paginList .paginationjs-prev, .paginationjs-next {
+  width: 0.6rem;
+}
+.paginList .disabled {
+  cursor: default;
+}
+.paginList .active {
+  background-color: #389edc;
+  cursor: pointer;
+}

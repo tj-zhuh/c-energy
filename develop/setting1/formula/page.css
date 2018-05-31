@@ -1,0 +1,146 @@
+
+
+body { background-color: #f1f1f1; }
+
+/* 按钮样式 */
+.button1 { color: #fff; background-color: #389edc; font-size: 0.16rem; text-align: center; cursor: pointer; min-width: 0.94rem; border-radius: 0.05rem; }
+.button1:hover { background-color: #45aced; }
+.button1:active { background-color: #217bb3; }
+
+/* 页面总容器 */
+.home-container { min-width: 19rem; }
+
+/* 主体部分 */
+.content { background-color: #f1f1f1; position: relative; height: 8rem; }
+
+/* panel */
+.panel { background-color: white; position: absolute; }
+.panel .title { width:100%;height:0.5rem;font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #389edc;background-color:#fafafa;text-align:center;line-height:0.5rem;}
+.panel .var_add {width:0.5rem;height:0.3rem;float:left;background-color:#389edc;color:#ffffff;line-height:0.3rem;margin-top:0.1rem;border-radius:0.1rem;margin-left:0.08rem;cursor:pointer;}
+.panel .var_add:hover {background-color:#45aced;}
+.panel .var_query {width:100%;height:0.3rem;}
+.panel .var_query input {position:relative;width:3rem;left:0.5rem;height:0.3rem;font-size: 0.15rem; font-family: 'Microsoft YaHei'; color: #389edc;line-height:0.3rem;}
+.panel .button_cal {position:relative;margin-left:auto;margin-right:auto;height:41px;width:41px;cursor:pointer;}
+.panel .button_cal.hide { background-image:url(/images/show_default.png);}
+.panel .button_cal.hide:hover { background-image:url(/images/show_active.png);}
+.panel .button_cal.show { background-image:url(/images/hide_default.png);}
+.panel .button_cal.show:hover { background-image:url(/images/hide_active.png);}
+.panel .cal_panel {width:100%;height:2.21rem;margin-top:0.1rem;}
+.panel .cal_panel .block1 {width:1rem;height:1.1rem;float:left;border: 0.5px solid #dcdcdc;line-height:1rem;text-align:center;font-size: 0.18rem; font-family: 'Microsoft YaHei';}
+.panel .cal_panel .block2 {width:3.9rem;height:1.1rem;float:left;border: 0.5px solid #dcdcdc;}
+.panel .cal_panel .block3 {width:1rem;height:1.1rem;float:left;border: 0.5px solid #dcdcdc;line-height:1rem;text-align:center;font-size: 0.18rem; font-family: 'Microsoft YaHei';}
+.panel .cal_panel .block4 {width:3.9rem;height:1.1rem;float:left;border: 0.5px solid #dcdcdc;}
+
+/*panel 修改*/
+.panel ul.title {float:left; } 
+.panel ul.title li {float:left;margin-left:0.2rem;} 
+.panel ul.title li input { width:2rem; }
+.panel ul.title li .var_add {float:left;} 
+
+/*数字样式*/
+.cal_panel ul {}
+.cal_panel ul li {}
+.cal_panel .number {height:0.4rem;width:0.4rem;margin-left:0.1rem;margin-top:0.1rem;float:left;color:#ffffff;background-color:#389edc;line-height:0.4rem;text-align:center;border-radius:0.08rem;cursor:pointer;}
+.cal_panel .delete {height:0.4rem;width:0.4rem;margin-left:0.1rem;margin-top:0.1rem;float:left;color:#ffffff;background-color:#389edc;line-height:0.4rem;text-align:center;border-radius:0.08rem;cursor:pointer;}
+.cal_panel .number:hover {background-color:#45aced;}
+.variable_list .var {height:0.4rem;width:0.8rem;margin-left:0.1rem;margin-top:0.1rem;float:left;color:#ffffff;background-color:#389edc;line-height:0.4rem;text-align:center;border-radius:0.08rem;cursor:pointer;}
+.variable_list .var.click {background-color:#217bb3;}
+.variable_list .var:hover {background-color:#45aced;}
+
+.panel-left-menu { width: 2.65rem; height: 10.2rem; left: 0.35rem; top: 0.1rem; }
+.panel-condition { width: 15.5rem; height: 0.82rem; left: 3.15rem; top: 0.1rem; }
+.panel-left { width: 4rem; height: 4.5rem; left: 3.15rem; top: 1.02rem; }
+.panel-left .var-container { height: 3rem; width:4rem;position:relative; top:0.1rem;overflow:hidden;padding-bottom:0.5rem;}
+.panel-left .var-container ul { width:4.3rem;overflow-x:hidden;overflow-y:auto;height:100%;}
+.panel-left .var-container li { width:4.3rem;height:0.5rem; border-top:solid 1px #389edc;cursor:pointer;overflow:hidden;}
+.panel-left .var-container li.click { background-color:#E5E5E5;}
+.panel-left .var-title { height:0.5rem;width:4rem;border-bottom: solid 1px #389edc;}
+.panel-left .var-title .title_left {float:left;line-height:0.5rem;font-family: 'Microsoft YaHei'; color: #389edc;width:1rem;text-align:center;}
+.panel-left .var-title .title_middle {float:left;line-height:0.5rem;font-family: 'Microsoft YaHei'; color: #389edc;width:2rem;text-align:center;}
+.panel-left .var-title .title_right { float:left;line-height:0.5rem;font-family: 'Microsoft YaHei'; color: #389edc;width:1rem;text-align:center;}
+.panel-left .var-container li .left {float:left;line-height:0.5rem;font-family: 'Microsoft YaHei';width:1rem;text-align:center;font-size:0.16rem;}
+.panel-left .var-container li .middle {float:left;font-family: 'Microsoft YaHei';width:2rem;text-align:center;height:0.5rem;overflow:hidden;font-size:0.16rem;}
+.panel-left .var-container li .delete {float:right; height:30px;width:30px; margin-right:0.05rem;cursor:pointer;margin-top:0.05rem;background-image:url(/images/btn-delete.png);}
+.panel-left .var-container li .edit {float:right; height:30px;width:30px; margin-right:0.35rem;cursor:pointer;margin-top:0.05rem;background-image:url(/images/btn-edit.png);}
+.panel-left .var-container li .edit:hover {background-image:url(/images/btn-edit-hover.png);}
+.panel-left .var-container li .delete:hover {background-image:url(/images/btn-delete-hover.png);}
+.panel-left .var-container li .delete.noevent { background-image:url(/images/btn-delete.png)}
+
+
+.left-middle {position:absolute;width:35px;height:35px;background-color:#389edc;background-image:url(/images/go_right.png);background-repeat:no-repeat;background-position:center;top:4.02rem;left:7.35rem;border-radius:50%;line-height:35px;cursor:pointer;}
+.left-middle:hover {background-color:#45aced;}
+.panel-middle { width: 5rem; height: 4.5rem; left: 7.85rem; top: 1.02rem; }
+.panel-middle .editor_text {position:relative;width:5rem;height:1rem;margin-top:0.1rem;}
+.panel-middle .editor_text span {position:relative;width:5rem;height:1rem;color:#389edc;font-size:0.2rem;font-family: 'SimSun';text-align:center;line-height:1rem;float:left;overflow-x:auto;overflow-y:hidden;}
+.middle-right {position:absolute;width:35px;height:35px;background-color:#389edc;background-image:url(/images/go_right.png);background-repeat:no-repeat;background-position:center;top:4.02rem;left:13.05rem;border-radius:50%;line-height:35px;cursor:pointer;}
+.middle-right:hover {background-color:#45aced;}
+.panel-right { width: 5.1rem; height: 4.5rem; left: 13.55rem; top: 1.02rem; }
+.panel-main { width:15.3rem;height:4.4rem;left:3.15rem;top:5.62rem;}
+.panel-right li{width:5.1rem;height:0.4rem;margin-top:0.1rem;}
+.panel-right li label{width:1.5rem;height:0.4rem;margin-left:0.1rem;text-align:right;font-size: 0.16rem; font-family: 'Microsoft YaHei'; color: #389edc;line-height:0.4rem;}
+.panel-right li input[type=text] {width:3.5rem;margin-left:0.1rem;font-size: 0.16rem; line-height: 0.4rem; height: 0.4rem; border: 1px solid #e1e1e1;float:right;}
+.panel-right li select {width:3.5rem;margin-left:0.1rem;font-size: 0.16rem; line-height: 0.4rem; height: 0.4rem; border: 1px solid #e1e1e1;float:right;}
+
+/* 菜单 */
+ul.menu { margin-left: 0.2rem; margin-top: 0.2rem; }
+ul.menu li { position: relative; width: 2.25rem; height: 0.63rem; border: 1px solid #eaeaea; line-height: 0.63rem; text-align: center; margin-top: -1px; }
+ul.menu img { position: absolute; left: -0.04rem; width: 2.49rem; height: 0.63rem; }
+ul.menu a { font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #389edc; }
+ul.menu i { position: absolute; left: 0; right: 0; top: 0; bottom: 0; font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #fff; z-index: 99; }
+
+/* 查询条件框 */
+.panel-condition .left { float: left; margin-top: 0.26rem; margin-left: 0.2rem; }
+.panel-condition .left li { float: left; margin-right: 0.2rem; }
+.panel-condition .left .label-text { }
+.panel-condition .left .label-text .label { color: #484848; font-family: 'Microsoft YaHei'; font-size: 0.1867rem; line-height: 0.4rem; }
+.panel-condition .left .label-text input { color: #484848; font-family: SimSun; font-size: 0.16rem; height: 0.4rem; line-height: 0.4rem; width: 2.5rem; text-indent: 0.1rem; border: 1px solid #e1e1e1; }
+.panel-condition .left .image-button { background-color: #389edc; width: 0.4rem; height: 0.4rem; text-align: center; border-radius:0.05rem;cursor:pointer;}
+.panel-condition .left .image-button:hover {background-color:#45aced;}
+
+/*中右按钮*/
+.panel-right .right { float: right; margin-top: 0.05rem; margin-right: 0.2rem; }
+.panel-right .right li { float: left; font-size: 0.2rem; font-family: 'Microsoft YaHei'; color: white; margin-right: 0.35rem; line-height: 0.25rem; text-align:center;}
+.panel-right .right li .image { float: left; width: 0.37rem; height: 0.37rem; border-radius: 0.02rem; background-color: #389edc; margin-right: 0.1rem; }
+.panel-right .right li .image:hover { background-color: #45aced; }
+.panel-right .right li .image:active { background-color: #217bb3; }
+.panel-right .right li .image img { margin-left: 0.04rem; margin-top: 0.04rem; }
+.panel-right .right .image-text-button { height:0.25rem;width:0.7rem;background-color:#389edc; border-radius:0.05rem;cursor:pointer;}
+.panel-right .right .image-text-button:hover { background-color:#45aced;}
+
+/* grid */
+.panel-bottom { padding: 0.1rem; }
+.grid-container { height: 3.74rem; border:1px solid #dadada; }
+.grid-container .x-grid-header-ct .x-box-item{ height: 0.5rem; border-left: solid 1px #dadada; border-bottom: solid 1px #dadada;}
+.grid-container .x-grid-cell { line-height: 0.45rem;  border-left: solid 1px #dadada; border-bottom: solid 1px #dadada;}
+
+.grid-container .btn-key { cursor: pointer; width: 0.3rem; height: 0.3rem; background-size: 100% 100%; float: left; }
+.grid-container .btn-key { background-image: url(/images/btn-edit.png); }
+.grid-container .btn-key:hover { background-image: url(/images/btn-edit-hover.png); }
+.grid-container .btn-key:active { background-image: url(/images/btn-edit-active.png); }
+.grid-container .btn-delete { margin-left:0.2rem}
+
+.grid-container .image-buttons { width:1.3rem}
+
+/****************************************zbc*********************************************/
+ul.left li.label-text select{height:0.4rem;width:2rem}
+ul.left li.label {height:0.4rem;line-height:0.4rem;}
+
+/*关于checkbox*/
+ul.left li .check{height:0.28rem;width:0.28rem;float:left;position:relative;top:0.05rem;background:url(/images/icon-radio.png) no-repeat;margin-right:0.1rem}
+ul.left li div.check.active{height:0.28rem;width:0.28rem;float:left;position:relative;top:0.05rem;background:url(/images/icon-radio-checked.png) no-repeat;margin-right:0.1rem}
+ul.left li .checklabel{position:relative;top:0.08rem}
+
+
+/*贴图修改*/
+.panel-condition .left .image-button img { margin-top: 0.03rem;width:0.36rem;height:0.36rem }
+.panel-condition .right li .image img { margin-left: 0.04rem; margin-top: 0.04rem;width:0.29rem;height:0.29rem }
+
+/*弹出窗口调整*/
+#window1 { height:5rem;top:2.5rem;}
+
+.hide {display:none;}
+
+.base_display_font{
+font-family:'microsoft yahei';
+}
+

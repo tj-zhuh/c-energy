@@ -1,0 +1,11 @@
+
+/* window */
+#window1 { height:4rem;}
+
+.panel-condition .left .label-text select{width:1.9rem}
+
+#beginSequence{width:1.9rem;height:0.45rem;line-height:0.45rem}
+#endSequence{width:1.9rem;height:0.45rem;line-height:0.45rem}
+
+#beginSequenceBox{z-index:990}
+#endSequenceBox{z-index:990}

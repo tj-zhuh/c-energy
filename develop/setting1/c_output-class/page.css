@@ -1,0 +1,60 @@
+
+
+/*body { background-color: #f1f1f1; }*/
+
+
+
+/* 页面总容器 */
+/*.home-container { min-width: 19rem; }*/
+
+/* 主体部分 */
+/*.content { background-color: #f1f1f1; position: relative; height: 8rem; }*/
+
+/* panel */
+/*.panel { background-color: white; position: absolute; }
+.panel-left-menu { width: 2.65rem; height: 9.2rem; left: 0.35rem; top: 0.1rem; }
+.panel-condition { width: 15.5rem; height: 0.82rem; left: 3.15rem; top: 0.1rem; }
+.panel-main { width: 15.5rem; height: 6.58rem; left: 3.15rem; top: 1.02rem; }*/
+
+/* 菜单 */
+/*ul.menu { margin-left: 0.2rem; margin-top: 0.2rem; }
+ul.menu li { position: relative; width: 2.25rem; height: 0.63rem; border: 1px solid #eaeaea; line-height: 0.63rem; text-align: center; margin-top: -1px; }
+ul.menu img { position: absolute; left: -0.04rem; width: 2.49rem; height: 0.63rem; }
+ul.menu a { font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #389edc; }
+ul.menu i { position: absolute; left: 0; right: 0; top: 0; bottom: 0; font-size: 0.21rem; font-family: 'Microsoft YaHei'; color: #fff; z-index: 99; }*/
+
+/* 查询条件框 */
+/*.panel-condition .left { float: left; margin-top: 0.26rem; margin-left: 0.2rem; }
+.panel-condition .left li { float: left; margin-right: 0.2rem; }
+.panel-condition .left .label-text { }
+.panel-condition .left .label-text .label { color: #484848; font-family: 'Microsoft YaHei'; font-size: 0.1867rem; line-height: 0.45rem; }
+.panel-condition .left .label-text input { color: #484848; font-family: SimSun; font-size: 0.16rem; height: 0.45rem; line-height: 0.45rem; width: 2.5rem; text-indent: 0.1rem; border: 1px solid #e1e1e1; }
+.panel-condition .left .image-button { cursor: pointer; background-color: #3b9ddc; width: 0.87rem; height: 0.45rem; text-align: center; border-radius: 0.02rem; }
+.panel-condition .left .image-button:hover { background-color: #45aced; }
+.panel-condition .left .image-button:active { background-color: #217bb3; }
+.panel-condition .left .image-button img { margin-top: 0.05rem; }
+
+
+.panel-condition .right { float: right; margin-top: 0.25rem; margin-right: 0.2rem; }
+.panel-condition .right li { float: left; font-size: 0.24rem; font-family: 'Microsoft YaHei'; color: #389edc; margin-right: 0.35rem; line-height: 0.37rem; cursor: pointer; }
+.panel-condition .right li .image { float: left; width: 0.37rem; height: 0.37rem; border-radius: 0.02rem; background-color: #389edc; margin-right: 0.1rem; }
+.panel-condition .right li:hover .image { background-color: #45aced; }
+.panel-condition .right li:active .image { background-color: #217bb3; }
+.panel-condition .right li .image img { margin-left: 0.04rem; margin-top: 0.04rem; }*/
+
+/* grid */
+/*.panel-main { padding: 0.1rem; }
+.grid-container { height: 3.74rem; border: 1px solid #dadada; }
+.grid-container .x-grid-header-ct .x-box-item { height: 0.5rem; line-height: 0.5rem; border-left: solid 1px #dadada; border-bottom: solid 1px #dadada; }
+.grid-container .x-grid-cell { line-height: 0.45rem; border-left: solid 1px #dadada; border-bottom: solid 1px #dadada; }*/
+
+/* window */
+#window1 { height:3.7rem;}
+
+
+
+
+
+/*/*贴图修改*/
+/*.panel-condition .left .image-button img { margin-top: 0.06rem;width:0.36rem;height:0.36rem }
+.panel-condition .right li .image img { margin-left: 0.04rem; margin-top: 0.04rem;width:0.29rem;height:0.29rem }*/*/
