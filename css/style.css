@@ -1,0 +1,195 @@
+﻿* { margin: 0; padding: 0; }
+body * { font-size: 0.18rem; font-family: "Microsoft YaHei"; }
+ul, li { list-style: none; }
+a { text-decoration: none; }
+select, input { outline: 0; } 
+i { font-style: normal; }
+.unselectable { -moz-user-select: -moz-none; -khtml-user-select: none; -webkit-user-select: none; -ms-user-select: none; user-select: none; }
+select,
+div.text,
+input[type=text] { text-indent: 0.1rem; font-size: 0.16rem; line-height: 0.25rem; height: 0.25rem; border: 1px solid #e1e1e1; }
+
+/* 按钮样式 */
+.button1 { color: #fff; background-color: #389edc; font-size: 0.16rem; text-align: center; cursor: pointer; min-width: 0.94rem; border-radius: 0.05rem; }
+.button1:hover { background-color: #45aced; }
+.button1:active { background-color: #217bb3; }
+
+/* 下拉多选框 */
+.multi-select-panel { position: relative; }
+.multi-select-text { background-color: #fff; background-image: url(/images2/icon-choice.png); background-position: right; background-repeat: no-repeat; padding-right: 0.3rem; overflow: hidden; }
+.multi-select-text.disabled { background-color:#eee; }
+.multi-select-box { position: absolute; width: 3.8rem; margin-left: -9999px; border: 1px solid #e2e2e2; top: 0.25rem; left: 0; z-index: 1; background-color: #fff; font-size: 0; }
+.multi-select-box.active { margin-left: 0; }
+.multi-select-box .all { margin-top: 0.1rem; }
+.multi-select-box .choice { display: inline-block; margin-left: 0.1rem; margin-bottom: 0.1rem; font-size: 0.16rem; font-family: SimSun; min-width: 1.6rem; height: 0.25rem; line-height: 0.25rem; cursor: pointer; }
+.multi-select-box .choice cite { float: left; margin-bottom: -0.05rem; margin-right: 0.1rem; width: 0.25rem; height: 0.25rem; background-image: url(/images/icon-checkbox.png); background-size: 100% 100%; }
+.multi-select-box .choice.active cite { background-image: url(/images/icon-checkbox-checked.png); }
+.multi-select-box ul { }
+.multi-select-box ul li.choice { }
+.multi-select-box .mask { position: absolute; margin-right: 2px; width: 2.8rem; z-index: 2; height: 0; top: -1px; left: 0; right: 0; border-top: 1px solid #fff; }
+
+/* 月份选择框 */
+.month-select-panel { position: relative; }
+.month-select-text { background-color: #fff; background-image: url(/images2/icon-choice.png); background-position: right; background-repeat: no-repeat; }
+.month-select-box { position: absolute; width: 1.82rem; margin-left: -9999px; border: 1px solid #e2e2e2; top: 0.25rem; left: 0; z-index: 1; background-color: #fff; font-size: 0; }
+.month-select-box.active { margin-left: 0; }
+.month-select-box .head { }
+.month-select-box .head .pp { color: #389edc; cursor: pointer; font-size: 0.18rem; font-weight: bold; height: 0.35rem; line-height: 0.35rem; color: #389edc; }
+.month-select-box .head .pp:hover { color: #6bc4fa; }
+.month-select-box .head .pp:active { color: #3892c8; }
+.month-select-box .head .pp.disabled { color: #ccc; cursor: default; }
+.month-select-box .head .pre { float: left; margin-left: 0.2rem; }
+.month-select-box .head .post { float: right; margin-right: 0.2rem; }
+.month-select-box .head .year { position: absolute; width: 0.4rem; left: 50%; margin-left: -0.2rem; height: 0.35rem; line-height: 0.35rem; font-size: 0.16rem; font-family: SimSun; color: #389edc; }
+.month-select-box .hr { border-top: 1px solid #f0f0f0; margin-left: 0.2rem; margin-right: 0.2rem; clear: both; }
+.month-select-box ul { margin-left: 0.2rem; }
+.month-select-box ul li.month { background-color: #b5e2f3; float: left; width: 0.32rem; height: 0.26rem; line-height: 0.26rem; margin-top: 0.06rem; margin-right: 0.06rem; font-size: 0.16rem; font-family: SimSun; color: #484848; text-align: center; }
+.month-select-box ul li.month:hover { background-color: #d9f1ff; }
+.month-select-box ul li.month:active { background-color: #389edc; color: #fff; }
+.month-select-box ul li.month.disabled { background-color: #ccc; color: #484848; cursor: default; }
+.month-select-box .space { height: 0.1rem; clear: both; }
+
+/* radio框 */
+ul.radios { }
+ul.radios li { font-size: 0.16rem; clear: both; margin-left: 0.3rem; margin-top: 0.4rem; cursor: pointer; }
+ul.radios li cite { float: left; display: block; width: 0.2rem; height: 0.2rem; background-image: url(/images/icon-radio.png); background-size: 100% 100%; }
+ul.radios li.active cite { background-image: url(/images/icon-radio-checked.png); }
+ul.radios.disabled li { cursor: default; color: #bebebe; }
+ul.radios.disabled li cite { background-image: url(/images/icon-radio-disabled.png); }
+ul.radios.disabled li.active cite { background-image: url(/images/icon-radio-checked-disabled.png); }
+
+/* mcheck组件 */
+ul.mcheck { }
+ul.mcheck li { font-size: 0.16rem; clear: both; margin-left: 0.3rem; margin-top: 0.4rem; cursor: pointer; }
+ul.mcheck li cite { float: left; display: block; width: 0.2rem; height: 0.2rem; background-image: url(/images/icon-checkbox.png); background-size: 100% 100%; }
+ul.mcheck li.active cite { background-image: url(/images/icon-checkbox-checked.png); }
+ul.mcheck.disabled li { cursor: default; color: #bebebe; }
+ul.mcheck.disabled li cite { background-image: url(/images/icon-checkbox-disabled.png); }
+ul.mcheck.disabled li.active cite { background-image: url(/images/icon-checkbox-checked-disabled.png); }
+
+
+/* grid */
+.grid-container * { border: none; background-image: none; background-color: transparent; padding: 0; }
+.grid-container .x-grid-table { border: none; }
+.grid-container .x-panel-body { margin-top: -1px; }
+.grid-container .x-grid-td { background-color: transparent; }
+.grid-container .x-grid-header-ct .x-box-item { height: 0.4rem; line-height: 0.4rem; font-size: 0.1866rem; font-family: SimSun; background: #fafafa; color: #5f5f5f; text-indent: 11px; border-left: solid 1px #ececec; border-bottom: solid 1px #ececec; }
+.grid-container .x-grid-header-ct .x-box-item.x-column-header-first { border-left: none; }
+.grid-container .x-grid-cell { line-height: 0.4rem; font-size: 0.16rem; font-family: SimSun; color: #5f5f5f; text-indent: 0.11rem; border-left: solid 1px #ececec; border-bottom: solid 1px #ececec; }
+.grid-container .x-grid-cell-first { border-left: none; }
+.grid-container .x-grid-row-over .x-grid-td { background-color: #f3f6f8; }
+.grid-container .x-grid-row-selected .x-grid-td { background-color: #e2e2e2; }
+.grid-container .image-buttons { width: 0.8rem; margin-left: auto; margin-right: auto; margin-top: 0.05rem; }
+.grid-container .btn-delete,
+.grid-container .btn-edit { cursor: pointer; width: 0.3rem; height: 0.3rem; background-size: 100% 100%; float: left; }
+.grid-container .btn-delete { background-image: url(/images/btn-delete.png); }
+.grid-container .btn-delete:hover { background-image: url(/images/btn-delete-hover.png); }
+.grid-container .btn-delete:active { background-image: url(/images/btn-delete-active.png); }
+.grid-container .btn-edit { background-image: url(/images/btn-edit.png); margin-left: 0.2rem; }
+.grid-container .btn-edit:hover { background-image: url(/images/btn-edit-hover.png); }
+.grid-container .btn-edit:active { background-image: url(/images/btn-edit-active.png); }
+
+
+
+/* 顶部条 */
+.page-head { height: 0.9rem; background-image: url(/images/bg-top.png); background-size: 100% 100%; }
+.page-head .logo { float: left; font-family: 'Microsoft YaHei'; font-weight: bold; color: #fff; font-size: 0.64rem; margin-left: 0.2rem; }
+
+/* 标题条和后退按钮 */
+.title-bar { color: #389ed9; height: 0.6rem; line-height: 0.6rem; font-size: 0.32rem; padding-left: 0.6rem; background-color: #ffffff; }
+.title-bar img { cursor: pointer; width: 0.45rem; height: 0.45rem; margin-bottom: -0.1rem; }
+.title-bar ul.nav { float: right; height: 0.6rem; margin-right: 0.3rem; }
+.title-bar ul.nav li { float: left; color: #389edc; font-size: 0.18rem; text-align: center; cursor: pointer; line-height: 0.6rem; margin-right: 0.1rem; padding-left: 0.1rem; padding-right: 0.1rem; }
+.title-bar ul.nav li a { color: #389edc; font-family: "Microsoft YaHei"; }
+.title-bar ul.nav li:hover { background-color: #f5f5f5; }
+.title-bar .title-description { float: right; border-bottom-width: 0.05rem; border-bottom-style: solid; border-bottom-color: #399DDB; font-size: 0.24rem; margin-right: 0.2rem; margin-top: 0.1rem; height: 0.45rem; line-height: 0.45rem; }
+
+/* 当前xx条，共计xx条 */
+.page-description { float: left; font-size: 0.16rem; font-family: SimSun; color: #5a5a5a; line-height: 0.4rem; }
+.page-description span { }
+
+/* 页码 */
+.pagin { position: relative; padding: 0 0.12rem; height: 0.5rem; width: 7rem; float: right; }
+.paginList { position: absolute; right: 0.42rem; top: 0.21rem; }
+.paginList li { float: left; width: 0.5rem; height: 0.35rem; line-height: 0.35rem; text-align: center; border: 1px solid #cdcdcd; margin-left: -1px; cursor: pointer; }
+.paginList li.active { background-color: #389edc; cursor: default; }
+.paginList li a { font-size: 0.16rem; color: #389edc; font-weight: bold; }
+.paginList li.active a { color: #fff; }
+.paginList .paginationjs-page:hover { background-color: #f5f5f5; }
+.paginList .paginationjs-page.active:hover { background-color: #389edc; }
+.paginList .paginationjs-prev,
+.paginList .paginationjs-next { width: 0.6rem; }
+.paginList .paginationjs-prev a,
+.paginList .paginationjs-next a { font-size: 0.16rem; font-family: SimSun; font-weight: bold; color: #389edc; }
+.paginList .paginationjs-prev.disabled,
+.paginList .paginationjs-next.disabled { cursor: default; }
+.paginList .paginationjs-prev.disabled a,
+.paginList .paginationjs-next.disabled a { color: #474747; }
+
+/* 模态窗口 */
+.opacity-div-for-modelwin { background: rgba(0, 0, 0, 0.3); z-index: 998; position: fixed; left: 0; top: 0; right: 0; bottom: 0; display: none; }
+
+/* 弹出框 */
+.window { width: 8rem; height: 7rem; position: absolute; top: 1rem; left: 5rem; background-color: #fcfdfd; box-shadow: 1px 0.08rem 0.1rem 1px #9b9b9b; border-radius: 1px; z-index: 999; border: solid 1px #ccc; margin-left: -9999px; }
+.window.open { margin-left: 0; }
+.window-title { line-height: 0.45rem; margin-left: 0.35rem; font-size: 0.24rem; color: #fff; }
+.window-head { height: 0.45rem; background-color: #389edc; border-bottom: solid 1px #cdcdcd; }
+.window-close { position: absolute; right: 0.1rem; top: 0.1rem; }
+.window-close img { width: 0.22rem; height: 0.22rem; cursor: pointer; }
+.window .window-body { }
+.window .window-buttons { clear: both; margin-top: 0.35rem; margin-left: auto; margin-right: auto; width: 3rem; }
+.window .window-buttons span { float: left; height: 0.35rem; line-height: 0.35rem; font-size: 0.18rem; font-family: 'Microsoft YaHei'; min-width: 0.55rem; }
+.window .window-buttons .window-cancel { float: right; }
+.window .hr { border-top: 1px solid #ccc; }
+
+/* 弹出框里面的form */
+.window form ul { margin: 0.5rem 0 0 1.11rem; }
+.window form li { margin-bottom: 0.15rem; clear: both; height: 0.33rem; }
+.window form li label { width: 0.5rem; font-size: 0.1866rem; font-family: SimSun; line-height: 0.33rem; color: #000; display: block; float: left; text-align: right; padding-right: 0.15rem; }
+
+.window form .length2 li label { width: 0.5rem; }
+.window form .length3 li label { width: 0.7rem; }
+.window form .length4 li label { width: 0.9rem; }
+.window form .length5 li label { width: 1.1rem; }
+.window form .length6 li label { width: 1.3rem; }
+.window form .length7 li label { width: 1.5rem; }
+.window form .length8 li label { width: 1.7rem; }
+.window form .length9 li label { width: 1.9rem; }
+
+.window form .length2 li .text { width: 4.5rem; }
+.window form .length3 li .text { width: 4.3rem; }
+.window form .length4 li .text { width: 4.1rem; }
+.window form .length5 li .text { width: 3.9rem; }
+.window form .length6 li .text { width: 3.7rem; }
+.window form .length7 li .text { width: 3.5rem; }
+.window form .length8 li .text { width: 3.3rem; }
+.window form .length9 li .text { width: 3.1rem; }
+
+/* dict */
+.dict { }
+.dict-add { width: 0.5rem; height: 0.32rem; line-height: 0.32rem; margin-top: 0.35rem; margin-left: 0.2rem; }
+.dict ul { margin-left: 0.2rem; margin-top: 0.2rem; height: 1.9rem; overflow-y: auto; }
+.dict li { float: left; margin-right: 0.25rem; height: 0.62rem; position: relative; }
+.dict li span, .dict li input { margin-top: 0.1rem; height: 0.42rem; line-height: 0.42rem; min-width: 0.5rem; font-family: 'Microsoft YaHei'; font-size: 0.14rem; padding-left: 0.1rem; padding-right: 0.1rem; text-indent: 0; }
+.dict li span { display: block; border: 1px solid #cdcdcd; color: #484848; }
+.dict li input { display: none; border: 1px solid #389edc; color: #389edc; }
+.dict li cite { display: none; position: absolute; right: -0.1rem; top: 0; width: 0.19rem; height: 0.19rem; background-size: 100% 100%; background-image: url(/images/icon-delete.png); }
+.dict li cite:hover { background-image: url(/images/icon-delete-hover.png); }
+.dict li cite:active { background-image: url(/images/icon-delete-active.png); }
+.dict li:hover cite { display: block; cursor: pointer; }
+.dict li.active span { display: none; }
+.dict li.active input { display: block; }
+.dict li.active cite { display: none; }
+
+.window form .length2 li select { width: 4.5rem; }
+.window form .length3 li select { width: 4.3rem; }
+.window form .length4 li select { width: 4.1rem; }
+.window form .length5 li select { width: 3.9rem; }
+.window form .length6 li select { width: 3.7rem; }
+.window form .length7 li select { width: 3.5rem; }
+.window form .length8 li select { width: 3.3rem; }
+.window form .length9 li select { width: 3.1rem; }
+
+/* 顶部warning */
+.top-warning { height: 0.35rem; line-height: 0.35rem; border: 1px solid #dbdcd1; background-color: #fef5d1; cursor: pointer; font-size: 0.14rem; font-family: 'Microsoft YaHei'; color: #9b570a; }
+.top-warning cite { float: left; margin-top:0.0375rem; margin-right:0.1rem; margin-left: 0.5rem; width: 0.27rem; height: 0.27rem; background-image: url(/images/icon-warning.png); background-size: 100% 100%; }

@@ -1,0 +1,15 @@
+﻿* { margin: 0; padding: 0; }
+ul, li { list-style: none; }
+
+/* 页面总容器 */
+.container { min-width: 19rem; }
+
+/* 上半部的大图 */
+.upper .marks .small-catelog { font-size: 0.2rem; }
+
+/* 后退 */
+.goback { cursor: pointer; width: 0.45rem; height: 0.45rem; position: absolute; top: 0.5rem; left: 0.5rem; background-image: url(/images/icon-back.png); background-size:100% 100%; }
+
+.redc{color:red}
+
+

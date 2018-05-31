@@ -1,0 +1,132 @@
+﻿* { margin: 0; padding: 0; }
+
+ul, li { list-style: none; }
+
+a { text-decoration: none; }
+
+/* 页面总容器 */
+.container { min-width: 19rem; }
+
+/* 顶部条 */
+.head { height: 0.88rem; }
+
+.head .logo { float: left; font-family: 'Microsoft YaHei'; font-weight: bold; color: #ca6e01; font-size: 0.64rem; margin-left: 0.2rem; }
+
+/* 顶部条右侧 */
+.head .head-right { float: right; }
+
+.head .head-right ul { float: left; }
+
+/* 顶部的页面导航 */
+.head .topmenu { float: right; margin-right: 0.5rem; margin-top: 0.2rem; }
+
+.head .topmenu li { float: left; min-width: 1.85rem; text-align: center; height: 0.5rem; line-height: 0.5rem; cursor: pointer; }
+
+.head .topmenu a { color: #389edc; font-family: 'Microsoft YaHei'; font-size: 0.29326rem; }
+
+.head .topmenu li:hover a { color: #fff; }
+
+.head .topmenu li:active a { color: #fff; }
+
+.head .topmenu li:hover { background-color: #389edc; border-radius: 0.1rem; }
+
+.head .topmenu li:active { background-color: #45aced; border-radius: 0.1rem; }
+
+
+/* 顶部右上角的图标 */
+.head .topright { margin-right: 0.15rem; margin-top: 0.1rem; }
+
+.head .topright li { float: left; margin-right: 0.15rem; background-color: #389edc; height: 0.35rem; line-height: 0.35rem; font-size: 0.2rem; margin-top: 0.2rem; cursor: pointer; }
+
+.head .topright li:hover { background-color: #45aced; }
+
+.head .topright li:active { background-color: #217bb3; }
+
+.head .topright img { height: 0.35rem; width: 0.35rem; }
+
+/* 用户按钮的浮动框 */
+#icon-user { position: relative; }
+
+#icon-user:active { background-color: #45aced; }
+
+#icon-user dl { position: absolute; z-index: 1; top: 0.35rem; left: 0; display: none; }
+
+#icon-user:hover dl { display: block; }
+
+#icon-user dd { width: 0.65rem; height: 0.25rem; line-height: 0.25rem; font-family: SimSun; font-size: 0.12rem; background-color: #fff; border: 1px solid #e1e1e1; text-align: center; }
+
+#icon-user dd:hover { background-color: #f2f2f2; }
+
+
+/* 上半部的大图 */
+.upper { height: 9.6rem; position: relative; background-image: url(/images/bg-home.png); background-size: 100% 100%; }
+
+.upper .chart-container { position: absolute; width: 12rem; height: 9.6rem; left: 3.6rem; }
+
+.upper .marks { position: absolute; left: 0.8rem; background-size: 100% 100%; width: 1.66rem; height: 1.66rem; }
+
+.upper .mark1 { top: 1.35rem; background-image: url(/images/bg-circle1.png); }
+
+.upper .mark2 { top: 3.85rem; background-image: url(/images/bg-circle2.png); }
+
+.upper .mark3 { top: 6.35rem; background-image: url(/images/bg-circle3.png); }
+
+.upper .marks .line { text-align: center; font-size: 0; }
+
+.upper .marks .line1 { margin-top: 0.2rem; }
+
+.upper .marks .line2 { margin-top: 0.01rem; }
+
+.upper .marks .line span { font-family: 'Microsoft YaHei'; color: #fff; }
+
+.upper .marks .number { font-size: 0.5067rem; }
+
+.upper .marks .unit { font-size: 0.2933rem; }
+
+.upper .marks .catelog { font-size: 0.32rem; }
+
+/* 切换碳排放和能耗量 */
+ul.switch { position: absolute; right: 0.2rem; top: 0.5rem; }
+
+ul.switch li { position: relative; float: left; width: 1.5rem; height: 1.5rem; line-height: 1.5rem; border: 1px solid #ccc; text-align: center; border-radius: 50%; cursor: pointer; margin-left: -0.25rem; background-color: #fff; font-size: 0.32rem; color: #389edc; font-family: 'Microsoft YaHei'; }
+
+ul.switch li.first { margin-left: 0; }
+
+ul.switch li.active { background-color: #fabc44; color: #fff; background-color: rgba(250,188,68,0.7); z-index: 1; }
+
+/* 下半部分 */
+.lower { height: 8.7rem; background-color: #f2f5f5; padding: 0.1rem; position:relative;}
+
+/* 千层饼 */
+#echt1 { height: 5rem; background-color: #fff; }
+
+/* 千层饼右上角的选择器 */
+.righttop-select { z-index: 1; position: absolute; margin-top: -4.9rem; right: 0.3rem; }
+
+.righttop-select li { float: left; cursor: pointer; width: 0.8rem; height: 0.4rem; line-height: 0.4rem; font-size: 0.3rem; text-align: center; }
+
+.righttop-select li.selected { background: #389edc; border-radius: 0.06rem; color: #fff; cursor: default; }
+
+/* 底部的两个图标 */
+.lower .bottom { margin-top: 0.1rem; }
+
+#echt2 { float: left; background-color: #fff; width: 9.35rem; height: 4rem; }
+
+#echt3 { float: right; background-color: #fff; width: 9.35rem; height: 4rem; }
+
+.redc { color: red; }
+/* 修改密码弹出框 */
+#window1 { width: 8rem; height: 4rem; }
+
+
+
+/* 月份选择条 */
+.monbe { width: 7.05rem; height: 1.41rem; position: absolute; background-image: url(/images/monbe-bg.png); background-size: 100% 100%; top:1rem; right:1.5rem; z-index:2;}
+
+.monbe-bar { width: 5.98rem; height: 0.6rem; position: absolute; top: 0.3rem; left: 0.325rem; }
+
+.monbe-begin,
+.monbe-end { width: 0.47rem; height: 0.59rem; background-image: url(/images/monbe-point.png); background-size: 100% 100%; position: absolute; cursor: pointer; left: 0; margin-left: 0; z-index:3;}
+.monbe-end { z-index:4;}
+
+.monbe-step { background-image: url(/images/monbe-bar.png); background-repeat: repeat-x; height: 0.16rem; position: absolute; margin-left:0.235rem; margin-top:0.15rem; }

@@ -1,0 +1,203 @@
+﻿body {
+    text-align: center;
+    background: url(../images/bk-login-gradient.png) repeat-x center 0;
+    /*min-width: 1920px;
+    min-height:950px;*/
+}
+
+.loginbody
+{
+  position:static;  
+  margin-left: 62%;
+  margin-top:250px;
+  width: 426px;
+  height: 475px;
+  background: url(../images/bk-login-input.png) no-repeat 0 0;
+ 
+}
+
+.loginerror{
+	margin-left: auto; 
+	margin-right: auto; 
+	margin-top: 0px; 
+	border-radius: 3px; 
+	background: #fef8d5; 
+	height: 20px; 
+	width: 282px; 
+	background-image: url('/images2/msgicon.png'); 
+	background-position: 0px 0px; 
+	background-size:17px; 
+	background-repeat: no-repeat; 
+	color: #8c6e4c; 
+	/*font: 10pt solid 'Microsoft YaHei';*/
+    font-size:12px;
+    font-family:'Microsoft YaHei';
+    font-weight:300;
+	visibility:hidden;
+}
+
+.logintext {
+	position:absolute;
+	margin-top:100px;
+	width:426px;
+	text-align:center;
+	font-size: 24pt;
+    font-family:'Microsoft YaHei';
+	color:#389edc;
+}
+
+.loginbox{
+  position:absolute;
+  width:426px;
+  height:240px;
+  margin-top: 150px;
+}
+
+.loginbox input{
+  display: block;
+  width: 235px;
+  height:34px;
+  color: #000;
+  background-color:#fff;
+  border-radius: 3px;  
+  border: 1px;
+  font-size: 12pt;
+  font-family:'Microsoft YaHei';
+  text-indent:10px;
+  cursor:pointer;
+}
+
+.loginbox input:-webkit-input-placeholder{
+  color: #000;
+}
+.loginbox input:-moz-placeholder{
+  color: #000;
+}
+.loginbox input:-ms-input-placeholder{
+  color: #000;
+}
+.loginuser
+{
+  position: relative;
+  float:inherit;
+  margin-top: 58px;
+  margin-left: 311px; 
+  margin-bottom:0px;
+  margin-right: 0px;
+  background:url(../images2/bk-login-user.png) no-repeat 210px 10px;
+}
+.loginpwd
+{
+  position: relative;
+  margin-top: 18px;
+  margin-left: 311px; 
+  margin-bottom:0px;
+  margin-right: 0px;
+  background:url(../images2/bk-login-password.png) no-repeat 210px 10px;
+}
+
+.mloginuser {
+    width: 280px !important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mloginpwd {
+width: 280px !important;
+margin-left: auto;
+ margin-right: auto;
+}
+
+.loginbox .loginbtn{
+  position:relative;
+  margin-top: 25px;
+  margin-left:45px; 
+  margin-bottom:0px;
+  width: 140px;
+  height:38px;
+  float:left;
+}
+
+#reset {
+	background:url(../images/reset_default.png) no-repeat 0 0;
+}
+
+	#reset:hover {
+		background:url(../images/reset_active.png) no-repeat 0 0;
+	}
+
+#sublogin {
+	background:url(../images/login_default.png) no-repeat 0 0;
+}
+	#sublogin:hover {
+		background:url(../images/login_active.png) no-repeat 0 0;
+	}
+
+	#loading-center-absolute {
+	display: none;
+	position: relative;
+	height: 50px;
+	width: 150px;
+	margin-top:10px;
+	margin-left: auto; 
+	margin-right: auto; 
+}
+.object{
+		width: 20px;
+		height: 20px;
+		background-color: #389edc;
+		float: left;
+		/*margin-right: 20px;*/
+		margin-left:20px;
+		margin-top: 15px;
+		-moz-border-radius: 50% 50% 50% 50%;
+		-webkit-border-radius: 50% 50% 50% 50%;
+		border-radius: 50% 50% 50% 50%;
+	}
+
+	#object_one {	
+		-webkit-animation: object_one 1.5s infinite;
+		animation: object_one 1.5s infinite;
+		}
+	#object_two {
+		-webkit-animation: object_two 1.5s infinite;
+		animation: object_two 1.5s infinite;
+		-webkit-animation-delay: 0.25s; 
+	    animation-delay: 0.25s;
+		}
+	#object_three {
+	    -webkit-animation: object_three 1.5s infinite;
+		animation: object_three 1.5s infinite;
+		-webkit-animation-delay: 0.5s;
+	    animation-delay: 0.5s;	
+		}
+	@-webkit-keyframes object_one {
+	75% { -webkit-transform: scale(0); }
+	}
+	@keyframes object_one {
+
+	  75% { 
+	    transform: scale(0);
+	    -webkit-transform: scale(0);
+	  }
+	}
+	@-webkit-keyframes object_two {
+	  75% { -webkit-transform: scale(0); }
+	}
+	@keyframes object_two {
+	  75% { 
+	    transform: scale(0);
+	    -webkit-transform:  scale(0);
+	  }
+	}
+	@-webkit-keyframes object_three {
+
+	  75% { -webkit-transform: scale(0); }
+	}
+	@keyframes object_three {
+
+	  75% { 
+	    transform: scale(0);
+	    -webkit-transform: scale(0);
+	  } 
+	}
